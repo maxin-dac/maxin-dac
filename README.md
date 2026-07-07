@@ -70,6 +70,7 @@ Beyond Data & BI, I enjoy exploring new technologies, particularly anything rela
 ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
+![PyCharm](https://img.shields.io/badge/PyCharm-000000?style=flat&logo=pycharm&logoColor=white)
 
 ---
 
@@ -113,7 +114,7 @@ A curated selection of Applied Skills most aligned with my Data + AI positioning
 | 🔍 Manage GitHub secret scanning using GitHub Copilot | Jul 2026 |
 
 <details>
-<summary>See Cloud, Security & Governance Applied Skills (10)</summary>
+<summary>See Cloud, Security & Governance Applied Skills</summary>
 <br>
 
 - Prepare security and compliance to support Microsoft 365 Copilot
