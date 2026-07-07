@@ -97,7 +97,7 @@ Power BI dashboard dedicated to competitive analysis of the Cameroonian banking 
 
 ---
 
-## 🛠️ Microsoft Applied Skills - Data, BI & AI
+## 🛠️ Microsoft Applied Skills
 
 A curated selection of Applied Skills most aligned with my Data + AI positioning (17 Applied Skills earned in total):
 
