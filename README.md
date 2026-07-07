@@ -76,7 +76,7 @@ Beyond Data & BI, I enjoy exploring new technologies, particularly anything rela
 
 ## 🚀 Featured Projects
 
-### Power BI Dashboard — World Development Indicators
+### Power BI Dashboard - World Development Indicators
 Star-schema model built on 12,449 records (World Bank, 211 countries, 1990–2021): DAX measures, analytical visuals covering socio-economic trends and regional comparisons.
 **Stack:** `Power Query` · `Power BI` · `DAX`
 
@@ -99,7 +99,7 @@ Power BI dashboard dedicated to competitive analysis of the Cameroonian banking 
 
 ---
 
-## 🛠️ Microsoft Applied Skills — Data, BI & AI
+## 🛠️ Microsoft Applied Skills - Data, BI & AI
 
 A curated selection of Applied Skills most aligned with my Data + AI positioning (17 Applied Skills earned in total):
 
