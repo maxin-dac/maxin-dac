@@ -6,9 +6,8 @@
 
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=0E2841&center=true&vCenter=true&width=650&lines=Data+%2B+Business+Intelligence;Python+%C2%B7+SQL+%C2%B7+Power+BI+%C2%B7+DAX;Always+learning+%E2%80%94+AI%2C+Cloud%2C+Automation)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maximendacleu)
-[![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/maximendacleu/)
-[![Gmail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ndacleumaxime@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maximendacleu)
+[![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat&logo=kaggle&logoColor=white)](https://www.kaggle.com/maximendacleu/)
 
 </div>
 
@@ -28,47 +27,49 @@ Beyond Data & BI, I enjoy exploring new technologies, particularly anything rela
 
 **Language & Data Analysis**
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=plotly&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logo=plotly&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=flat&logoColor=white)
 
 **Machine Learning & Deep Learning**
 
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-D00000?style=flat&logo=keras&logoColor=white)
 
 **Business Intelligence & Data Visualization**
 
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![DAX](https://img.shields.io/badge/DAX-F2C811?style=for-the-badge&logoColor=black)
-![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-F2C811?style=flat&logoColor=black)
+![Excel](https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoftexcel&logoColor=white)
 
 **Databases**
 
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)
 
 **Cloud & Data Platform**
 
-![Microsoft Azure](https://img.shields.io/badge/Microsoft%20Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
-![Microsoft Fabric](https://img.shields.io/badge/Microsoft%20Fabric-1F6FEB?style=for-the-badge&logoColor=white)
+![Microsoft Azure](https://img.shields.io/badge/Microsoft%20Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
+![Microsoft Fabric](https://img.shields.io/badge/Microsoft%20Fabric-1F6FEB?style=flat&logoColor=white)
 
 **AI & Productivity**
 
-![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white)
-![Microsoft 365](https://img.shields.io/badge/Microsoft%20365-D83B01?style=for-the-badge&logo=microsoft365&logoColor=white)
-![Google Forms](https://img.shields.io/badge/Google%20Forms-7248B9?style=for-the-badge&logo=googleforms&logoColor=white)
+![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-000000?style=flat&logo=githubcopilot&logoColor=white)
+![Microsoft 365 Copilot](https://img.shields.io/badge/Microsoft%20365%20Copilot-D83B01?style=flat&logo=microsoft365&logoColor=white)
+![Google Workspace](https://img.shields.io/badge/Google%20Workspace-4285F4?style=flat&logo=googleworkspace&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat&logo=googlegemini&logoColor=white)
+![Claude Code](https://img.shields.io/badge/Claude%20Code-D97757?style=flat&logo=anthropic&logoColor=white)
 
 **Dev Environments & Tools**
 
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
+![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat&logo=kaggle&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
 
 ---
 
@@ -82,16 +83,16 @@ Star-schema model built on 12,449 records (World Bank, 211 countries, 1990–202
 Power BI dashboard dedicated to competitive analysis of the Cameroonian banking sector: pricing, branch network coverage, market positioning.
 **Stack:** `Python` · `Power Query` · `Power BI` · `DAX`
 
-> 📌 *Both projects are being finalized and will be published as dedicated repositories on this profile.*
+> 📌 *Both projects are in progress and will be published as dedicated repositories on this profile.*
 
 ---
 
 ## 📜 Microsoft Certifications
 
-![AZ-900](https://img.shields.io/badge/AZ--900-Azure%20Fundamentals-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![DP-900](https://img.shields.io/badge/DP--900-Data%20Fundamentals-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![PL-900](https://img.shields.io/badge/PL--900-Power%20Platform-742774?style=flat-square&logo=powerautomate&logoColor=white)
-![SC-900](https://img.shields.io/badge/SC--900-Security%2C%20Compliance%20%26%20Identity-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![AZ-900](https://img.shields.io/badge/AZ--900-Azure%20Fundamentals-0078D4?style=flat&logo=microsoftazure&logoColor=white)
+![DP-900](https://img.shields.io/badge/DP--900-Data%20Fundamentals-0078D4?style=flat&logo=microsoftazure&logoColor=white)
+![PL-900](https://img.shields.io/badge/PL--900-Power%20Platform-742774?style=flat&logo=powerautomate&logoColor=white)
+![SC-900](https://img.shields.io/badge/SC--900-Security%2C%20Compliance%20%26%20Identity-0078D4?style=flat&logo=microsoftazure&logoColor=white)
 
 🔗 [Official Microsoft Learn Transcript](https://learn.microsoft.com/en-us/users/MaximeNdacleu-3447/)
 
@@ -132,8 +133,8 @@ A curated selection of Applied Skills most aligned with my Data + AI positioning
 
 ## 📫 Get in Touch
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maximendacleu)
-[![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/maximendacleu/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maximendacleu)
+[![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat&logo=kaggle&logoColor=white)](https://www.kaggle.com/maximendacleu/)
 
 <div align="center">
 <sub>Open to Data Analyst / BI Analyst opportunities</sub>
