@@ -95,8 +95,6 @@ Power BI dashboard dedicated to competitive analysis of the Cameroonian banking 
 ![PL-900](https://img.shields.io/badge/PL--900-Power%20Platform-742774?style=flat&logo=powerautomate&logoColor=white)
 ![SC-900](https://img.shields.io/badge/SC--900-Security%2C%20Compliance%20%26%20Identity-0078D4?style=flat&logo=microsoftazure&logoColor=white)
 
-🔗 [Official Microsoft Learn Transcript](https://learn.microsoft.com/en-us/users/MaximeNdacleu-3447/)
-
 ---
 
 ## 🛠️ Microsoft Applied Skills - Data, BI & AI
@@ -129,6 +127,8 @@ A curated selection of Applied Skills most aligned with my Data + AI positioning
 - Get started with identities and access using Microsoft Entra
 
 </details>
+
+🔗 [Official Microsoft Learn Transcript](https://learn.microsoft.com/en-us/users/maximendacleu-3447/transcript/vjjnkuwyoknz4nq?source=docs)
 
 ---
 
