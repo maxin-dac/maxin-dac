@@ -6,8 +6,9 @@
 
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=0E2841&center=true&vCenter=true&width=650&lines=Data+%2B+Business+Intelligence;Python+%C2%B7+SQL+%C2%B7+Power+BI+%C2%B7+DAX;Always+learning+%E2%80%94+AI%2C+Cloud%2C+Automation)
 
-<a href="https://www.linkedin.com/in/maximendacleu"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" width="28" height="28" alt="LinkedIn"/></a>&nbsp;&nbsp;
-<a href="https://www.kaggle.com/maximendacleu/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kaggle/kaggle-original.svg" width="28" height="28" alt="Kaggle"/></a>&nbsp;&nbsp;
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maximendacleu)
+[![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/maximendacleu/)
+[![Gmail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ndacleumaxime@gmail.com)
 
 </div>
 
@@ -32,48 +33,47 @@ Beyond Data & BI, I enjoy exploring new technologies, particularly anything rela
 
 **Language & Data Analysis**
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="48" height="48" alt="Python" title="Python"/>&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" width="48" height="48" alt="Pandas" title="Pandas"/>&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg" width="48" height="48" alt="NumPy" title="NumPy"/>&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/matplotlib/matplotlib-original.svg" width="48" height="48" alt="Matplotlib" title="Matplotlib"/>&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original.svg" width="48" height="48" alt="Jupyter" title="Jupyter"/>&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kaggle/kaggle-original.svg" width="48" height="48" alt="Kaggle" title="Kaggle"/>
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=plotly&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logoColor=white)
 
 **Machine Learning & Deep Learning**
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/scikitlearn/scikitlearn-original.svg" width="48" height="48" alt="scikit-learn" title="scikit-learn"/>&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg" width="48" height="48" alt="TensorFlow" title="TensorFlow"/>&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/keras/keras-original.svg" width="48" height="48" alt="Keras" title="Keras"/>
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
 
 **Business Intelligence & Data Visualization**
 
-<img src="https://raw.githubusercontent.com/microsoft/PowerBI-Icons/main/SVG/Power-BI.svg" width="48" height="48" alt="Power BI" title="Power BI"/>&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/microsoft/PowerBI-Icons/main/SVG/Power-Query-Colored.svg" width="48" height="48" alt="Power Query" title="Power Query"/>&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/DAX-F2C811?style=for-the-badge&logoColor=black" height="28" alt="DAX"/>&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logoColor=white" height="28" alt="Excel"/>
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-F2C811?style=for-the-badge&logoColor=black)
+![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
 
 **Databases**
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/microsoftsqlserver/microsoftsqlserver-original.svg" width="48" height="48" alt="SQL Server" title="SQL Server"/>
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
 
 **Cloud & Data Platform**
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg" width="48" height="48" alt="Microsoft Azure" title="Microsoft Azure"/>&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/Microsoft%20Fabric-1F6FEB?style=for-the-badge&logoColor=white" height="28" alt="Microsoft Fabric"/>
+![Microsoft Azure](https://img.shields.io/badge/Microsoft%20Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![Microsoft Fabric](https://img.shields.io/badge/Microsoft%20Fabric-1F6FEB?style=for-the-badge&logoColor=white)
 
 **AI & Productivity**
 
-<img src="https://cdn.simpleicons.org/githubcopilot" width="48" height="48" alt="GitHub Copilot" title="GitHub Copilot"/>&nbsp;&nbsp;
-<img src="https://cdn.simpleicons.org/googleforms" width="48" height="48" alt="Google Forms" title="Google Forms"/>&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/Microsoft%20365-D83B01?style=for-the-badge&logoColor=white" height="28" alt="Microsoft 365"/>
+![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white)
+![Microsoft 365](https://img.shields.io/badge/Microsoft%20365-D83B01?style=for-the-badge&logo=microsoft365&logoColor=white)
+![Google Forms](https://img.shields.io/badge/Google%20Forms-7248B9?style=for-the-badge&logo=googleforms&logoColor=white)
 
 **Dev Environments & Tools**
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="48" height="48" alt="Git" title="Git"/>&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="48" height="48" alt="GitHub" title="GitHub"/>&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="48" height="48" alt="VS Code" title="VS Code"/>
-
-> ℹ️ *Power BI and Power Query use the official icons published by Microsoft ([microsoft/PowerBI-Icons](https://github.com/microsoft/PowerBI-Icons)). Excel, Microsoft 365, Microsoft Fabric and DAX don't have a standalone, freely redistributable official logo, so they're shown as colored badges rather than a fake logo.*
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 ---
 
@@ -93,9 +93,12 @@ Power BI dashboard dedicated to competitive analysis of the Cameroonian banking 
 
 ## 📜 Microsoft Certifications
 
-<img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg" width="72" height="72" alt="Microsoft Certified: Fundamentals"/>
+![AZ-900](https://img.shields.io/badge/AZ--900-Azure%20Fundamentals-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![DP-900](https://img.shields.io/badge/DP--900-Data%20Fundamentals-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![PL-900](https://img.shields.io/badge/PL--900-Power%20Platform-742774?style=flat-square&logo=powerautomate&logoColor=white)
+![SC-900](https://img.shields.io/badge/SC--900-Security%2C%20Compliance%20%26%20Identity-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
 
-**AZ-900** Azure Fundamentals · **DP-900** Data Fundamentals · **PL-900** Power Platform Fundamentals · **SC-900** Security, Compliance & Identity Fundamental
+*+ Google Analytics Certification · Google Digital Marketing*
 
 🔗 [Official Microsoft Learn Transcript](https://learn.microsoft.com/en-us/users/MaximeNdacleu-3447/)
 
@@ -134,11 +137,25 @@ A curated selection of Applied Skills most aligned with my Data + AI positioning
 
 ---
 
-## 📫 Get in Touch
-
-<a href="https://www.linkedin.com/in/maximendacleu"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" width="32" height="32" alt="LinkedIn"/></a>&nbsp;&nbsp;
-<a href="https://www.kaggle.com/maximendacleu/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kaggle/kaggle-original.svg" width="32" height="32" alt="Kaggle"/></a>&nbsp;&nbsp;
+## 📊 GitHub Stats
 
 <div align="center">
-<sub>Open to Data Analyst / BI Analyst opportunities</sub>
+
+<img src="https://github-readme-stats.vercel.app/api?username=maxin-dac&show_icons=true&theme=default&hide_border=true&title_color=0E2841&icon_color=0E2841&text_color=333333" alt="GitHub Stats" height="165"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=maxin-dac&hide_border=true&theme=default&ring=0E2841&fire=0E2841" alt="GitHub Streak" height="165"/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=maxin-dac&layout=compact&hide_border=true&theme=default&title_color=0E2841&text_color=333333" alt="Top Languages" height="165"/>
+
+</div>
+
+---
+
+## 📫 Get in Touch
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maximendacleu)
+[![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/maximendacleu/)
+[![Gmail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ndacleumaxime@gmail.com)
+
+<div align="center">
+<sub>Yaoundé, Cameroon 🇨🇲 — Open to Data Analyst / BI Analyst opportunities</sub>
 </div>
