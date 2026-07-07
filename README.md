@@ -76,15 +76,15 @@ Beyond Data & BI, I enjoy exploring new technologies, particularly anything rela
 
 ## 🚀 Featured Projects
 
-### 📊 Power BI Dashboard — World Development Indicators
+### Power BI Dashboard — World Development Indicators
 Star-schema model built on 12,449 records (World Bank, 211 countries, 1990–2021): DAX measures, analytical visuals covering socio-economic trends and regional comparisons.
 **Stack:** `Power Query` · `Power BI` · `DAX`
 
-### 🏦 Cameroonian Banking Market Benchmark
+### Cameroonian Banking Market Benchmark
 Power BI dashboard dedicated to competitive analysis of the Cameroonian banking sector: pricing, branch network coverage, market positioning.
 **Stack:** `Python` · `Power Query` · `Power BI` · `DAX`
 
-> 📌 *Both projects are in progress and will be published as dedicated repositories on this profile.*
+> *Both projects are in progress and will be published as dedicated repositories on this profile.*
 
 ---
 
@@ -105,13 +105,13 @@ A curated selection of Applied Skills most aligned with my Data + AI positioning
 
 | Applied Skill | Date |
 |---|---|
-| 🗄️ Implement a data warehouse in Microsoft Fabric | Jan 2026 |
-| ⚡ Implement a Real-Time Intelligence solution with Microsoft Fabric | Dec 2025 |
-| 🤖 Accelerate AI-assisted development using GitHub Copilot | Dec 2025 |
-| 💬 Streamline business workflows with AI chat | Dec 2025 |
-| 📑 Generate reports with AI research agents | Nov 2025 |
-| 🧩 Resolve GitHub issues using GitHub Copilot | Jul 2026 |
-| 🔍 Manage GitHub secret scanning using GitHub Copilot | Jul 2026 |
+| Implement a data warehouse in Microsoft Fabric | Jan 2026 |
+| Implement a Real-Time Intelligence solution with Microsoft Fabric | Dec 2025 |
+| Accelerate AI-assisted development using GitHub Copilot | Dec 2025 |
+| Streamline business workflows with AI chat | Dec 2025 |
+| Generate reports with AI research agents | Nov 2025 |
+| Resolve GitHub issues using GitHub Copilot | Jul 2026 |
+| Manage GitHub secret scanning using GitHub Copilot | Jul 2026 |
 
 <details>
 <summary>See Cloud, Security & Governance Applied Skills</summary>
