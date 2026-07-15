@@ -97,6 +97,7 @@ A curated selection of Applied Skills most aligned with my Data + AI positioning
 | Generate reports with AI research agents | Nov 2025 |
 | Resolve GitHub issues using GitHub Copilot | Jul 2026 |
 | Manage GitHub secret scanning using GitHub Copilot | Jul 2026 |
+| Get started developing agents in Microsoft Foundry | Jul 2026 |
 
 <details>
 <summary>See my other Applied Skills</summary>
@@ -112,7 +113,6 @@ A curated selection of Applied Skills most aligned with my Data + AI positioning
 - Deploy and configure Azure Monitor
 - Get started with Azure management tasks
 - Get started with identities and access using Microsoft Entra
-- Get started developing agents in Microsoft Foundry
 
 </details>
 
