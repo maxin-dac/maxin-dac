@@ -26,6 +26,7 @@ Beyond Data & BI, I enjoy exploring new technologies, particularly anything rela
 ## 🧰 Stack & Tools
 
 **Dev Environments & Tools**
+
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
 ![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat&logo=kaggle&logoColor=white)
