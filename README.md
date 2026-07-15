@@ -25,20 +25,14 @@ Beyond Data & BI, I enjoy exploring new technologies, particularly anything rela
 
 ## 🧰 Stack & Tools
 
-**Language & Data Analysis**
-
+**Dev Environments & Tools**
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logo=plotly&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=flat&logoColor=white)
-
-**Machine Learning & Deep Learning**
-
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-D00000?style=flat&logo=keras&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
+![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat&logo=kaggle&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
+![PyCharm](https://img.shields.io/badge/PyCharm-000000?style=flat&logo=pycharm&logoColor=white)
 
 **Business Intelligence & Data Visualization**
 
@@ -63,15 +57,6 @@ Beyond Data & BI, I enjoy exploring new technologies, particularly anything rela
 ![Google Workspace](https://img.shields.io/badge/Google%20Workspace-4285F4?style=flat&logo=googleworkspace&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat&logo=googlegemini&logoColor=white)
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-D97757?style=flat&logo=anthropic&logoColor=white)
-
-**Dev Environments & Tools**
-
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
-![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat&logo=kaggle&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
-![PyCharm](https://img.shields.io/badge/PyCharm-000000?style=flat&logo=pycharm&logoColor=white)
 
 ---
 
@@ -100,7 +85,7 @@ Power BI dashboard dedicated to competitive analysis of the Cameroonian banking 
 
 ## 🛠️ Microsoft Applied Skills
 
-A curated selection of Applied Skills most aligned with my Data + AI positioning (17 Applied Skills earned in total):
+A curated selection of Applied Skills most aligned with my Data + AI positioning (18 Applied Skills earned in total):
 
 | Applied Skill | Date |
 |---|---|
@@ -126,7 +111,7 @@ A curated selection of Applied Skills most aligned with my Data + AI positioning
 - Deploy and configure Azure Monitor
 - Get started with Azure management tasks
 - Get started with identities and access using Microsoft Entra
-- Microsoft Applied Skills: Get started developing agents in Microsoft Foundry
+- Get started developing agents in Microsoft Foundry
 
 </details>
 
