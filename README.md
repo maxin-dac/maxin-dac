@@ -4,7 +4,7 @@
 
 ### Data Analyst & Business Intelligence Analyst
 
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=0E2841&center=true&vCenter=true&width=650&lines=Data+%2B+Business+Intelligence;Python+%C2%B7+SQL+%C2%B7+Power+BI+%C2%B7+DAX;Always+learning+%E2%80%94+AI%2C+Cloud%2C+Automation)
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=0E2841&center=true&vCenter=true&width=650&lines=Data+%2B+Business+Intelligence;Python+%C2%B7+SQL+%C2%B7+Power+BI+%C2%B7+Excel;Always+learning+%E2%80%94+AI%2C+Cloud%2C+Automation)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maximendacleu)
 [![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat&logo=kaggle&logoColor=white)](https://www.kaggle.com/maximendacleu/)
@@ -17,7 +17,7 @@
 
 Data Analyst & Business Intelligence Analyst with experience leading multi-country market studies across the banking, energy, and services sectors. I cover the full analytical cycle: data collection and processing, modeling, and delivery of reports and decision-oriented recommendations.
 
-My cross-disciplinary background (**Public Law × Computer Science × Business Intelligence**) lets me approach data problems from both a strategic and an operational angle.
+My cross-disciplinary background (Public Law × Computer Science × Business Intelligence) lets me approach data problems from both a strategic and an operational angle.
 
 Beyond Data & BI, I enjoy exploring new technologies, particularly anything related to applied AI (agents, Copilot, automation), a technical curiosity I keep documenting through my Microsoft certifications, Applied Skills, and other technical projects.
 
@@ -113,7 +113,7 @@ A curated selection of Applied Skills most aligned with my Data + AI positioning
 | Manage GitHub secret scanning using GitHub Copilot | Jul 2026 |
 
 <details>
-<summary>See Cloud, Security & Governance Applied Skills</summary>
+<summary>See my other Applied Skills</summary>
 <br>
 
 - Prepare security and compliance to support Microsoft 365 Copilot
@@ -126,6 +126,7 @@ A curated selection of Applied Skills most aligned with my Data + AI positioning
 - Deploy and configure Azure Monitor
 - Get started with Azure management tasks
 - Get started with identities and access using Microsoft Entra
+- Microsoft Applied Skills: Get started developing agents in Microsoft Foundry
 
 </details>
 
