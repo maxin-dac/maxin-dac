@@ -29,7 +29,7 @@ Beyond Data & BI, I enjoy exploring new technologies, particularly anything rela
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white)
-![Antigravity](https://img.shields.io/badge/Antigravity-FF69B4?style=flat&logo=spacex&logoColor=white)
+![Antigravity](https://img.shields.io/badge/Antigravity-3776AB?style=flat&logo=python&logoColor=white)
 ![Cursor](https://img.shields.io/badge/Cursor-000000?style=flat&logo=cursor&logoColor=10b981)
 ![PyCharm](https://img.shields.io/badge/PyCharm-000000?style=flat&logo=pycharm&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
@@ -61,7 +61,8 @@ Beyond Data & BI, I enjoy exploring new technologies, particularly anything rela
 ![Google Workspace](https://img.shields.io/badge/Google%20Workspace-4285F4?style=flat&logo=googleworkspace&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat&logo=googlegemini&logoColor=white)
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-D97757?style=flat&logo=anthropic&logoColor=white)
-![Codex](https://img.shields.io/badge/Codex-000000?style=flat&logo=openai&logoColor=white)
+![Codex](https://img.shields.io/badge/Codex-10a37f?style=flat&logo=openai&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat&logo=ollama&logoColor=white)
 
 ---
 
