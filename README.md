@@ -80,12 +80,13 @@ Power BI dashboard dedicated to competitive analysis of the Cameroonian banking 
 
 ---
 
-## 📜 Microsoft Certifications
+## 📜 Certifications
 
 ![AZ-900](https://img.shields.io/badge/AZ--900-Azure%20Fundamentals-0078D4?style=flat&logo=microsoftazure&logoColor=white)
 ![DP-900](https://img.shields.io/badge/DP--900-Data%20Fundamentals-0078D4?style=flat&logo=microsoftazure&logoColor=white)
 ![PL-900](https://img.shields.io/badge/PL--900-Power%20Platform-742774?style=flat&logo=powerautomate&logoColor=white)
 ![SC-900](https://img.shields.io/badge/SC--900-Security%2C%20Compliance%20%26%20Identity-0078D4?style=flat&logo=microsoftazure&logoColor=white)
+![Google Analytics](https://img.shields.io/badge/Google_Analytics-E37400?style=flat&logo=googleanalytics&logoColor=white)
 
 ---
 
