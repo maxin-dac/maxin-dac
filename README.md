@@ -104,9 +104,9 @@ A curated selection of Applied Skills most aligned with my Data + AI positioning
 | Manage GitHub secret scanning using GitHub Copilot | Jul 2026 |
 | Get started developing agents in Microsoft Foundry | Jul 2026 |
 
-**<details>**
+<details>
 **<summary>See my other Applied Skills</summary>**
-**<br>**
+<br>
 
 - Prepare security and compliance to support Microsoft 365 Copilot
 - Secure Azure services and workloads with Microsoft Defender for Cloud
