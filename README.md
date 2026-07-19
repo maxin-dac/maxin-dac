@@ -66,7 +66,7 @@ Beyond Data & BI, I enjoy exploring new technologies, particularly anything rela
 ## 🚀 Featured Projects
 
 ### Power BI Dashboard - World Development Indicators
-Star-schema model built on 12,449 records (World Bank, 211 countries, 1990–2021): DAX measures, analytical visuals covering socio-economic trends and regional comparisons.
+Star-schema model built on 12,449 records (World Bank, 211 countries, 1960-2025): DAX measures, analytical visuals covering socio-economic trends and regional comparisons.
 **Stack:** `Power Query` · `Power BI` · `DAX`
 
 ### Cameroonian Banking Market Benchmark
