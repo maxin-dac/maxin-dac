@@ -28,18 +28,21 @@ Beyond Data & BI, I enjoy exploring new technologies, particularly anything rela
 **Dev Environments & Tools**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white)
+![Antigravity](https://img.shields.io/badge/Antigravity-3776AB?style=flat&logo=python&logoColor=white)
+![Cursor](https://img.shields.io/badge/Cursor-000000?style=flat&logo=cursor&logoColor=10b981)
+![PyCharm](https://img.shields.io/badge/PyCharm-000000?style=flat&logo=pycharm&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
 ![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat&logo=kaggle&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
-![PyCharm](https://img.shields.io/badge/PyCharm-000000?style=flat&logo=pycharm&logoColor=white)
 
 **Business Intelligence & Data Visualization**
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX-F2C811?style=flat&logoColor=black)
 ![Excel](https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoftexcel&logoColor=white)
+![Power Query](https://img.shields.io/badge/Power_Query-008272?style=flat&logo=microsoft&logoColor=white)
+![Power Pivot](https://img.shields.io/badge/Power_Pivot-107C41?style=flat&logo=microsoft&logoColor=white)
 
 **Databases**
 
@@ -48,8 +51,8 @@ Beyond Data & BI, I enjoy exploring new technologies, particularly anything rela
 
 **Cloud & Data Platform**
 
-![Microsoft Azure](https://img.shields.io/badge/Microsoft%20Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
-![Microsoft Fabric](https://img.shields.io/badge/Microsoft%20Fabric-1F6FEB?style=flat&logoColor=white)
+![Microsoft Azure](https://img.shields.io/badge/Microsoft_Azure-0089D6?style=flat&logo=microsoftazure&logoColor=white)
+![Microsoft Fabric](https://img.shields.io/badge/Microsoft_Fabric-1F4E5B?style=flat&logo=microsoft&logoColor=white)
 
 **AI & Productivity**
 
@@ -58,6 +61,7 @@ Beyond Data & BI, I enjoy exploring new technologies, particularly anything rela
 ![Google Workspace](https://img.shields.io/badge/Google%20Workspace-4285F4?style=flat&logo=googleworkspace&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat&logo=googlegemini&logoColor=white)
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-D97757?style=flat&logo=anthropic&logoColor=white)
+![Codex](https://img.shields.io/badge/Codex-000000?style=flat&logo=openai&logoColor=white)
 
 ---
 
