@@ -84,6 +84,7 @@ Power BI dashboard dedicated to competitive analysis of the Cameroonian banking 
 ![Power Platform Fundamentals](https://img.shields.io/badge/PL--900-Power_Platform_Fundamentals-742774?style=flat&logo=microsoftpowerplatform&logoColor=white)
 ![Security, Compliance & Identity Fundamentals](https://img.shields.io/badge/SC--900-Security,_Compliance_&_Identity_Fundamentals-B00020?style=flat&logo=microsoftdefender&logoColor=white)
 ![Google Analytics](https://img.shields.io/badge/GA4-Google_Analytics-E37400?style=flat)
+![IT Technical Support Specialist](https://img.shields.io/badge/ITS-IT_Technical_Support_Specialist-00529B?style=flat)
 
 ---
 
