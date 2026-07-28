@@ -65,9 +65,9 @@ Beyond Data & BI, I enjoy exploring new technologies, particularly anything rela
 
 ## 🚀 Featured Projects
 
-### Power BI Dashboard - World Development Indicators
-Star-schema model built on 12,449 records (World Bank, 211 countries, 1960-2025): DAX measures, analytical visuals covering socio-economic trends and regional comparisons.
-**Stack:** `Power Query` · `Power BI` · `DAX`
+### Global Economic Intelligence Dashboard
+Star-schema model built on +5,000 records (World Bank, OWID, 217 countries, 2010-2024): analytical visuals covering socio-economic trends and regional comparisons.
+**Stack:** `Python` · `Power Query` · `Power BI` · `DAX`
 
 ### Cameroonian Banking Market Benchmark
 Power BI dashboard dedicated to competitive analysis of the Cameroonian banking sector: pricing, branch network coverage, market positioning.
