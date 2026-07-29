@@ -63,20 +63,6 @@ Beyond Data & BI, I enjoy exploring new technologies, particularly anything rela
 
 ---
 
-## 🚀 Featured Projects
-
-### Global Economic Intelligence Dashboard
-Star-schema model built on +5,000 records (World Bank, OWID, 217 countries, 2010-2024): analytical visuals covering socio-economic trends and regional comparisons.
-**Stack:** `Python` · `Power Query` · `Power BI` · `DAX`
-
-### Cameroonian Banking Market Benchmark
-Power BI dashboard dedicated to competitive analysis of the Cameroonian banking sector: pricing, branch network coverage, market positioning.
-**Stack:** `Python` · `Power Query` · `Power BI` · `DAX`
-
-> *Both projects are in progress and will be published as dedicated repositories on this profile.*
-
----
-
 ## 📜 Certifications
 
 ![Azure Fundamentals](https://img.shields.io/badge/AZ--900-Azure_Fundamentals-0089D6?style=flat&logo=microsoftazure&logoColor=white)
