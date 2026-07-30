@@ -11,19 +11,19 @@
 <br><br>
 
 <a href="https://www.linkedin.com/in/maximendacleu" target="_blank">
-  <img src="https://skillicons.dev/icons?i=linkedin" height="45" alt="LinkedIn" />
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
-&nbsp;&nbsp;
+&nbsp;
 <a href="https://www.kaggle.com/maximendacleu/" target="_blank">
-  <img src="https://skillicons.dev/icons?i=kaggle" height="45" alt="Kaggle" />
+  <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" />
 </a>
-&nbsp;&nbsp;
+&nbsp;
 <a href="https://share.streamlit.io/user/maxin-dac" target="_blank">
-  <img src="https://skillicons.dev/icons?i=streamlit" height="45" alt="Streamlit" />
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
 </a>
-&nbsp;&nbsp;
+&nbsp;
 <a href="https://learn.microsoft.com/en-us/users/maximendacleu-3447/transcript/vjjnkuwyoknz4nq?source=docs" target="_blank">
-  <img src="https://images.credly.com/size/110x110/images/2e032549-9eb1-4022-861c-8ff1f274cb75/image.png" height="45" alt="Microsoft Learn" />
+  <img src="https://img.shields.io/badge/Microsoft-00A4EF?style=for-the-badge&logo=microsoft&logoColor=white" alt="Microsoft" />
 </a>
 
 </div>
