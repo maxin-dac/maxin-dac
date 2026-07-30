@@ -8,7 +8,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maximendacleu)
 [![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat&logo=kaggle&logoColor=white)](https://www.kaggle.com/maximendacleu/)
-[![Microsoft](https://img.shields.io/badge/Microsoft%20Learn-00A4EF?style=flat&logo=microsoft&logoColor=white)](https://learn.microsoft.com/en-us/users/maximendacleu-3447/transcript/vjjnkuwyoknz4nq?source=docs)
+[![Microsoft](https://img.shields.io/badge/Microsoft-00A4EF?style=flat&logo=microsoft&logoColor=white)](https://learn.microsoft.com/en-us/users/maximendacleu-3447/transcript/vjjnkuwyoknz4nq?source=docs)
 
 </div>
 
