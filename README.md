@@ -10,32 +10,34 @@
 
 <br><br>
 
-<a href="https://www.linkedin.com/in/maximendacleu" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-&nbsp;
-<a href="https://www.kaggle.com/maximendacleu/" target="_blank">
-  <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" />
-</a>
-&nbsp;
-<a href="https://share.streamlit.io/user/maxin-dac" target="_blank">
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
-</a>
-&nbsp;
-<a href="https://learn.microsoft.com/en-us/users/maximendacleu-3447/transcript/vjjnkuwyoknz4nq?source=docs" target="_blank">
-  <img src="https://img.shields.io/badge/Microsoft-00A4EF?style=for-the-badge&logo=microsoft&logoColor=white" alt="Microsoft" />
-</a>
+<!-- Grille de liens structurée -->
+<table>
+  <tr>
+    <td align="center" width="120">
+      <a href="https://www.linkedin.com/in/maximendacleu" target="_blank">
+        <img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="28" height="28" alt="LinkedIn"/><br/>
+        <sub><b>LinkedIn</b></sub>
+      </a>
+    </td>
+    <td align="center" width="120">
+      <a href="https://www.kaggle.com/maximendacleu/" target="_blank">
+        <img src="https://cdn.simpleicons.org/kaggle/20BEFF" width="28" height="28" alt="Kaggle"/><br/>
+        <sub><b>Kaggle</b></sub>
+      </a>
+    </td>
+    <td align="center" width="120">
+      <a href="https://share.streamlit.io/user/maxin-dac" target="_blank">
+        <img src="https://cdn.simpleicons.org/streamlit/FF4B4B" width="28" height="28" alt="Streamlit"/><br/>
+        <sub><b>Streamlit</b></sub>
+      </a>
+    </td>
+    <td align="center" width="120">
+      <a href="https://learn.microsoft.com/en-us/users/maximendacleu-3447/transcript/vjjnkuwyoknz4nq?source=docs" target="_blank">
+        <img src="https://cdn.simpleicons.org/microsoft/00A4EF" width="28" height="28" alt="Microsoft"/><br/>
+        <sub><b>MS Learn</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
-</div>
-
----
-
-## 👋 About Me
-
-Data Analyst & Business Intelligence Analyst with experience leading market researches across the banking, energy, and services sectors. I cover the full analytical cycle — data collection and processing, modeling, and delivery of reports with decision-oriented recommendations. My cross-disciplinary background (**Public Law × Computer Science × Business Intelligence**) lets me approach data problems from both a strategic and an operational angle. Beyond Data & BI, I explore applied AI (agents, automation), a technical curiosity I keep documenting through continuous learning hands-on projects.
-
----
-
-<div align="center">
-<sub>Open to Data Analyst / BI Analyst opportunities</sub>
 </div>
