@@ -24,7 +24,6 @@ Beyond Data & BI, I explore applied AI — agents, Copilot, automation — a tec
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=maxin-dac&show_icons=true&hide_border=true&title_color=0E2841&icon_color=2E8DE0&text_color=333333&bg_color=ffffff)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=maxin-dac&layout=compact&hide_border=true&title_color=0E2841&text_color=333333&bg_color=ffffff)
 
 </div>
