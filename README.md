@@ -1,4 +1,4 @@
-<div align="center">
+opportunitiesalystalystiv align="center">
 
 # Hi, I'm Maxime 👋
 
@@ -27,6 +27,6 @@ Data Analyst & Business Intelligence Analyst with experience leading market rese
 
 <div align="center">
 
-<sub>Open to Data Analyst / BI Analyst opportunities</sub>
+<sub>Open to Data Analyst / BI Analyst / Market Research opportunities</sub>
 
 </div>
