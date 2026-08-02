@@ -1,0 +1,39 @@
+name: Update Stack Badges
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # Lundi 06h00 UTC
+  workflow_dispatch:        # Bouton "Run" manuel
+  push:
+    branches: [main]
+    paths:
+      - "scripts/generate_stack.py"
+
+jobs:
+  update-stack:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate stack icons
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_stack.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "chore: auto-update stack icons"
+          git push

@@ -1,6 +1,6 @@
 <div align="center">
 
-# 👋 I'm Maxime
+# 👋Hi, I'm Maxime
 
 ### Data Analyst & Business Intelligence Analyst
 
@@ -27,19 +27,20 @@
 
 ### 🌍 [Global Economic Intelligence Dashboard](https://github.com/maxin-dac/world-economic-dashboard)
 
-A bilingual (FR/EN) decision-support platform that screens the macro environment of **217 countries** (2000–2024) through **58 World Bank indicators**, structured around the PESTEL framework. Includes an **Investment Score** module for market-entry risk/opportunity screening across 7 coordinated views.
+A bilingual (FR/EN) decision-support platform that screens the macro environment of **217 countries** (2000–2024) through **58 World Bank indicators**, structured around the PESTEL framework across **7 coordinated views**. Includes an **Investment Score** module — composite attractiveness scoring (0–100), a Risk/Return matrix, and a red-flag detector for market-entry screening.
 
 <a href="https://world-bi-dashboard.streamlit.app/" target="_blank"><img src="https://img.shields.io/badge/▶_Live_Demo-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Demo" /></a>
 <a href="https://github.com/maxin-dac/world-economic-dashboard" target="_blank"><img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Code" /></a>
 
-<sub>🚧 Additional projects in progress !</sub>
+<sub>🚧 *Additional projects in progress !*</sub>
 
 ---
 
 ## Stack & Tools
 
 <!-- STACK:START -->
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge) ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white) ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black) ![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+<img src="https://skillicons.dev/icons?i=python,sql,pandas,numpy,plotly,git,github,vscode,azure&theme=dark" alt="Tech stack" />
+
 <!-- STACK:END -->
 
 ---
@@ -53,13 +54,13 @@ A bilingual (FR/EN) decision-support platform that screens the macro environment
 ![PL-900](https://img.shields.io/badge/PL--900-Power%20Platform-742774?style=flat&logo=microsoft&logoColor=white)
 ![SC-900](https://img.shields.io/badge/SC--900-Security-00A4EF?style=flat&logo=microsoft&logoColor=white)
 
-**Other** - ![Certiport](https://img.shields.io/badge/CertiPORT-IT%20Support%20Specialist-E8452C?style=flat) ![Google Analytics](https://img.shields.io/badge/Google-Analytics-E37400?style=flat&logo=googleanalytics&logoColor=white)
+**Other** - ![Certiport](https://img.shields.io/badge/Certiport-IT%20Support%20Specialist-E8452C?style=flat) ![Google Analytics](https://img.shields.io/badge/Google-Analytics-E37400?style=flat&logo=googleanalytics&logoColor=white)
 
 ---
 
 ## Applied Skills
 
-**18 Microsoft Applied Skills** - the 5 most relevant to Data & BI:
+**18 Microsoft Applied Skills** - the 5 most relevant to my Data & BI positionning:
 
 | Skill | Earned |
 |-------|--------|
@@ -70,7 +71,7 @@ A bilingual (FR/EN) decision-support platform that screens the macro environment
 | Get started developing agents in Microsoft Foundry | Jul 2026 |
 
 <details>
-<summary><b>Security, Compliance, Identity & Cloud Operations — 13 more</b></summary>
+<summary><b>**Security, Compliance, Identity & Cloud Operations — 13 more**</b></summary>
 
 <br>
 
@@ -92,7 +93,7 @@ A bilingual (FR/EN) decision-support platform that screens the macro environment
 
 </details>
 
-📄 [**Microsoft Certifications & Applied Skills - Official Transcript →**](https://learn.microsoft.com/en-us/users/maximendacleu-3447/transcript/vjjnkuwyoknz4nq?source=docs)
+📄 [Microsoft Certifications & Applied Skills - Official Transcript](https://learn.microsoft.com/en-us/users/maximendacleu-3447/transcript/vjjnkuwyoknz4nq?source=docs)
 
 ---
 
