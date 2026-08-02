@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import os
 import re
 import requests
@@ -9,12 +10,12 @@ from urllib3.util.retry import Retry
 GITHUB_USER = "maxin-dac"
 README_PATH = "README.md"
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
-TIMEOUT = 15  # secondes par requête
+TIMEOUT = 15
 
 session = requests.Session()
 retries = Retry(
     total=5,
-    backoff_factor=1.5,                        # 1.5s, 3s, 6s, 12s, 24s
+    backoff_factor=1.5,
     status_forcelist=[429, 500, 502, 503, 504],
     allowed_methods=["GET"],
     raise_on_status=False,
@@ -61,18 +62,13 @@ REQ_KEYWORDS = {
     "azure":     ["azure"],
 }
 
-LANG_ALIASES = {
-    "shell": "bash",
-    "javascript": "js",
-    "typescript": "ts",
-}
+LANG_ALIASES = {"shell": "bash", "javascript": "js", "typescript": "ts"}
 
 KNOWN_TECHS = set(BADGE_MAP) | set(REQ_KEYWORDS)
 
 # ─── API GITHUB ───────────────────────────────────────────────────────────────
 
 def safe_get(url, params=None, raw=False):
-    """GET robuste avec retries + gestion d'erreur lisible."""
     headers = dict(HEADERS)
     if raw:
         headers["Accept"] = "application/vnd.github.v3.raw"
@@ -91,27 +87,19 @@ def get_repos(username):
     resp = safe_get(url, params=params)
     if resp is None or resp.status_code != 200:
         status = resp.status_code if resp is not None else "aucune réponse"
-        raise SystemExit(
-            f"❌ Impossible de récupérer les repos (status: {status}).\n"
-            f"   403 -> rate limit : configure GITHUB_TOKEN.\n"
-            f"   'aucune réponse' -> réseau : proxy / VPN / antivirus."
-        )
+        raise SystemExit(f"❌ Repos introuvables (status: {status}).")
     repos = resp.json()
     return [r for r in repos if not r["fork"] and not r["archived"]]
 
 def get_repo_languages(owner, repo):
     url = f"https://api.github.com/repos/{owner}/{repo}/languages"
     resp = safe_get(url)
-    if resp is not None and resp.status_code == 200:
-        return resp.json()
-    return {}
+    return resp.json() if (resp is not None and resp.status_code == 200) else {}
 
 def get_file_content(owner, repo, path):
     url = f"https://api.github.com/repos/{owner}/{repo}/contents/{path}"
     resp = safe_get(url, raw=True)
-    if resp is not None and resp.status_code == 200:
-        return resp.text
-    return None
+    return resp.text if (resp is not None and resp.status_code == 200) else None
 
 # ─── DETECTION ────────────────────────────────────────────────────────────────
 
@@ -130,8 +118,7 @@ def detect_from_repo(repo):
     owner = repo["owner"]["login"]
     name = repo["name"]
 
-    langs = get_repo_languages(owner, name)
-    for lang in langs:
+    for lang in get_repo_languages(owner, name):
         key = LANG_ALIASES.get(lang.lower(), lang.lower())
         if key in KNOWN_TECHS:
             detected.add(key)
@@ -139,8 +126,7 @@ def detect_from_repo(repo):
     req = get_file_content(owner, name, "requirements.txt")
     if req:
         detected |= detect_from_requirements(req)
-
-    if not req:
+    else:
         pyproject = get_file_content(owner, name, "pyproject.toml")
         if pyproject:
             detected |= detect_from_requirements(pyproject)
@@ -158,18 +144,16 @@ def detect_from_repo(repo):
 # ─── GENERATION ───────────────────────────────────────────────────────────────
 
 def make_badge(label, color, logo):
-    """Badge shields.io 'for-the-badge' uniforme."""
     label_enc = label.replace(" ", "%20").replace("-", "--")
-    if logo == "powerbi":                       # fond jaune -> logo noir
+    if logo == "powerbi":
         logo_qs = "&logo=powerbi&logoColor=black"
     elif logo:
         logo_qs = f"&logo={logo}&logoColor=white"
     else:
-        logo_qs = ""                            # SQL / NumPy : texte seul
+        logo_qs = ""
     return f"![{label}](https://img.shields.io/badge/{label_enc}-{color}?style=for-the-badge{logo_qs})"
 
 def generate_stack_markdown(all_techs):
-    """Une seule rangée de badges, dans l'ordre DISPLAY_ORDER."""
     badges = [make_badge(*BADGE_MAP[t]) for t in DISPLAY_ORDER if t in all_techs]
     if not badges:
         return "_Stack auto-détecté : aucun repo public pour l'instant._"
@@ -186,7 +170,6 @@ def inject_into_readme(readme_path, stack_md):
 
     if START_MARKER not in content or END_MARKER not in content:
         print(f"ERREUR : marqueurs absents dans {readme_path}.")
-        print(f"  Ajoute : {START_MARKER}  et  {END_MARKER}")
         return False
 
     pattern = re.compile(
