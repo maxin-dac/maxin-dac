@@ -39,7 +39,10 @@ A bilingual (FR/EN) decision-support platform that screens the macro environment
 ## Stack & Tools
 
 <!-- STACK:START -->
-<img src="https://skillicons.dev/icons?i=python,sql,pandas,numpy,plotly,git,github,vscode,azure&theme=dark" alt="Tech stack" />
+
+<img src="https://skillicons.dev/icons?i=python,pandas,numpy,plotly,git,github,bash,js,ts,html,css&theme=dark" alt="Tech stack" />
+
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white) ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=white) ![Excel](https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoftexcel&logoColor=white)
 
 <!-- STACK:END -->
 
