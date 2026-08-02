@@ -1,6 +1,6 @@
 <div align="center">
 
-# 👋 I'm Maxime
+# 👋Hi, I'm Maxime
 
 ### Data Analyst & Business Intelligence Analyst
 
@@ -27,12 +27,12 @@
 
 ### 🌍 [Global Economic Intelligence Dashboard](https://github.com/maxin-dac/world-economic-dashboard)
 
-A bilingual (FR/EN) decision-support platform that screens the macro environment of **217 countries** (2000–2024) through **58 World Bank indicators**, structured around the PESTEL framework. Includes an **Investment Score** module for market-entry risk/opportunity screening across 7 coordinated views.
+A bilingual (FR/EN) decision-support platform that screens the macro environment of **217 countries** (2000–2024) through **58 World Bank indicators**, structured around the PESTEL framework across **7 coordinated views**. Includes an **Investment Score** module — composite attractiveness scoring (0–100), a Risk/Return matrix, and a red-flag detector for market-entry screening.
 
 <a href="https://world-bi-dashboard.streamlit.app/" target="_blank"><img src="https://img.shields.io/badge/▶_Live_Demo-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Demo" /></a>
 <a href="https://github.com/maxin-dac/world-economic-dashboard" target="_blank"><img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Code" /></a>
 
-<sub>🚧 Additional projects in progress !</sub>
+<sub>🚧 *Additional projects in progress !*</sub>
 
 ---
 
@@ -54,13 +54,13 @@ A bilingual (FR/EN) decision-support platform that screens the macro environment
 ![PL-900](https://img.shields.io/badge/PL--900-Power%20Platform-742774?style=flat&logo=microsoft&logoColor=white)
 ![SC-900](https://img.shields.io/badge/SC--900-Security-00A4EF?style=flat&logo=microsoft&logoColor=white)
 
-**Other** - ![Certiport](https://img.shields.io/badge/CertiPORT-IT%20Support%20Specialist-E8452C?style=flat) ![Google Analytics](https://img.shields.io/badge/Google-Analytics-E37400?style=flat&logo=googleanalytics&logoColor=white)
+**Other** - ![Certiport](https://img.shields.io/badge/Certiport-IT%20Support%20Specialist-E8452C?style=flat) ![Google Analytics](https://img.shields.io/badge/Google-Analytics-E37400?style=flat&logo=googleanalytics&logoColor=white)
 
 ---
 
 ## Applied Skills
 
-**18 Microsoft Applied Skills** - the 5 most relevant to Data & BI:
+**18 Microsoft Applied Skills** - the 5 most relevant to my Data & BI positionning:
 
 | Skill | Earned |
 |-------|--------|
@@ -71,7 +71,7 @@ A bilingual (FR/EN) decision-support platform that screens the macro environment
 | Get started developing agents in Microsoft Foundry | Jul 2026 |
 
 <details>
-<summary><b>Security, Compliance, Identity & Cloud Operations — 13 more</b></summary>
+<summary><b>**Security, Compliance, Identity & Cloud Operations — 13 more**</b></summary>
 
 <br>
 
@@ -93,7 +93,7 @@ A bilingual (FR/EN) decision-support platform that screens the macro environment
 
 </details>
 
-📄 [**Microsoft Certifications & Applied Skills - Official Transcript →**](https://learn.microsoft.com/en-us/users/maximendacleu-3447/transcript/vjjnkuwyoknz4nq?source=docs)
+📄 [Microsoft Certifications & Applied Skills - Official Transcript](https://learn.microsoft.com/en-us/users/maximendacleu-3447/transcript/vjjnkuwyoknz4nq?source=docs)
 
 ---
 
