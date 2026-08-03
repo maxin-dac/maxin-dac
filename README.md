@@ -71,7 +71,7 @@ A bilingual (FR/EN) decision-support platform that screens the macro environment
 | Get started developing agents in Microsoft Foundry | Jul 2026 |
 
 <details>
-<summary><b>**Security, Compliance, Identity & Cloud Operations - 13 more**</b></summary>
+<summary><b>Security, Compliance, Identity & Cloud Operations - 13 more</b></summary>
 
 <br>
 
