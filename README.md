@@ -60,7 +60,11 @@ A bilingual (FR/EN) agentic research desk that generates grounded macro-financia
 **Microsoft Certified**
 
 ![DP-900 Data](https://img.shields.io/badge/DP--900%20Data-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white) ![PL-900 Power Platform](https://img.shields.io/badge/PL--900%20Power%20Platform-742774?style=for-the-badge&logo=microsoft&logoColor=white) ![AZ-900 Azure](https://img.shields.io/badge/AZ--900%20Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white) ![SC-900 Security](https://img.shields.io/badge/SC--900%20Security-00A4EF?style=for-the-badge&logo=microsoft&logoColor=white) 
+![DP-900 Data](https://img.shields.io/badge/DP--900%20Data-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white) ![PL-900 Power Platform](https://img.shields.io/badge/PL--900%20Power%20Platform-742774?style=for-the-badge&logo=microsoft&logoColor=white) ![AZ-900 Azure](https://img.shields.io/badge/AZ--900%20Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white) ![SC-900 Security](https://img.shields.io/badge/SC--900%20Security-00A4EF?style=for-the-badge&logo=microsoft&logoColor=white) 
 
+**Other**
+
+![Certiport IT Support](https://img.shields.io/badge/Certiport%20IT%20Support-E8452C?style=for-the-badge) ![Google Analytics](https://img.shields.io/badge/Google%20Analytics-E37400?style=for-the-badge&logo=googleanalytics&logoColor=white)
 **Other**
 
 ![Certiport IT Support](https://img.shields.io/badge/Certiport%20IT%20Support-E8452C?style=for-the-badge) ![Google Analytics](https://img.shields.io/badge/Google%20Analytics-E37400?style=for-the-badge&logo=googleanalytics&logoColor=white)
@@ -80,6 +84,7 @@ A bilingual (FR/EN) agentic research desk that generates grounded macro-financia
 | Get started developing agents in Microsoft Foundry | Jul 2026 |
 
 <details>
+<summary><b>Security, Compliance, Identity & Cloud Operations - 13 more</b></summary>
 <summary><b>Security, Compliance, Identity & Cloud Operations - 13 more</b></summary>
 
 <br>
