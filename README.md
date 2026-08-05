@@ -23,7 +23,7 @@
 
 ---
 
-## Featured Project
+## Featured Projects
 
 ### 🌍 [Global Economic Intelligence Dashboard](https://github.com/maxin-dac/world-economic-dashboard)
 
@@ -32,14 +32,24 @@ A bilingual (FR/EN) decision-support platform that screens the macro environment
 <a href="https://world-bi-dashboard.streamlit.app/" target="_blank"><img src="https://img.shields.io/badge/▶_Live_Demo-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Demo" /></a>
 <a href="https://github.com/maxin-dac/world-economic-dashboard" target="_blank"><img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Code" /></a>
 
-<sub>🚧 *Additional projects in progress !*</sub>
+---
+
+### 🛰 [Country Risk Desk](https://github.com/maxin-dac/country-risk-desk)
+
+A bilingual (FR/EN) agentic research desk that generates grounded macro-financial briefs for **217 economies** across **13 World Bank indicators**. Combines quantitative reads with qualitative context pulled from trusted domains (Reuters, Bloomberg, IMF, FT) via a **LangGraph agent** (Tavily + Groq). Every claim is **validated against verbatim quotes** before display — anything ungrounded is dropped. Features threshold alerts, multi-country comparison, and bilingual PDF export. **No key, no sign-up, no wait** for visitors.
+
+<a href="https://country-risk-desk.streamlit.app/" target="_blank"><img src="https://img.shields.io/badge/▶_Live_Demo-0A2C3A?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Demo" /></a>
+<a href="https://github.com/maxin-dac/country-risk-desk" target="_blank"><img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Code" /></a>
+
+<sub>🚧 *More projects in progress — open to collaborations!*</sub>
 
 ---
 
 ## Stack & Tools
 
 <!-- STACK:START -->
-<img src="https://skillicons.dev/icons?i=python,sql,pandas,numpy,plotly,git,github,vscode,azure&theme=dark" alt="Tech stack" />
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge) ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white) ![Tavily](https://img.shields.io/badge/Tavily-00B4D8?style=for-the-badge) ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black) ![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 
 <!-- STACK:END -->
 
@@ -49,12 +59,11 @@ A bilingual (FR/EN) decision-support platform that screens the macro environment
 
 **Microsoft Certified**
 
-![AZ-900](https://img.shields.io/badge/AZ--900-Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
-![DP-900](https://img.shields.io/badge/DP--900-Azure%20Data-0078D4?style=flat&logo=microsoftazure&logoColor=white)
-![PL-900](https://img.shields.io/badge/PL--900-Power%20Platform-742774?style=flat&logo=microsoft&logoColor=white)
-![SC-900](https://img.shields.io/badge/SC--900-Security-00A4EF?style=flat&logo=microsoft&logoColor=white)
+![DP-900 Data](https://img.shields.io/badge/DP--900%20Data-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white) ![PL-900 Power Platform](https://img.shields.io/badge/PL--900%20Power%20Platform-742774?style=for-the-badge&logo=microsoft&logoColor=white) ![AZ-900 Azure](https://img.shields.io/badge/AZ--900%20Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white) ![SC-900 Security](https://img.shields.io/badge/SC--900%20Security-00A4EF?style=for-the-badge&logo=microsoft&logoColor=white) 
 
-**Other** - ![Certiport](https://img.shields.io/badge/Certiport-IT%20Support%20Specialist-E8452C?style=flat) ![Google Analytics](https://img.shields.io/badge/Google-Analytics-E37400?style=flat&logo=googleanalytics&logoColor=white)
+**Other**
+
+![Certiport IT Support](https://img.shields.io/badge/Certiport%20IT%20Support-E8452C?style=for-the-badge) ![Google Analytics](https://img.shields.io/badge/Google%20Analytics-E37400?style=for-the-badge&logo=googleanalytics&logoColor=white)
 
 ---
 
@@ -71,7 +80,7 @@ A bilingual (FR/EN) decision-support platform that screens the macro environment
 | Get started developing agents in Microsoft Foundry | Jul 2026 |
 
 <details>
-<summary><b>**Security, Compliance, Identity & Cloud Operations — 13 more**</b></summary>
+<summary><b>Security, Compliance, Identity & Cloud Operations - 13 more</b></summary>
 
 <br>
 
