@@ -27,7 +27,7 @@
 
 ### 🌍 [Global Economic Intelligence Dashboard](https://github.com/maxin-dac/world-economic-dashboard)
 
-A bilingual (FR/EN) decision-support platform that screens the macro environment of **217 countries** (2000–2024) through **58 World Bank indicators**, structured around the PESTEL framework across **7 coordinated views**. Includes an **Investment Score** module — composite attractiveness scoring (0–100), a Risk/Return matrix, and a red-flag detector for market-entry screening.
+A bilingual (FR/EN) decision-support platform that screens the macro environment of **217 countries** (2000–2024) through **58 World Bank indicators**, structured around the PESTEL framework across **6 coordinated views**.
 
 <a href="https://world-bi-dashboard.streamlit.app/" target="_blank"><img src="https://img.shields.io/badge/▶_Live_Demo-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Demo" /></a>
 <a href="https://github.com/maxin-dac/world-economic-dashboard" target="_blank"><img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Code" /></a>
@@ -36,7 +36,7 @@ A bilingual (FR/EN) decision-support platform that screens the macro environment
 
 ### 🛰 [Country Risk Desk](https://github.com/maxin-dac/country-risk-desk)
 
-A bilingual (FR/EN) agentic research desk that generates grounded macro-financial briefs for **217 economies** across **13 World Bank indicators**. Combines quantitative reads with qualitative context pulled from trusted domains (Reuters, Bloomberg, IMF, FT) via a **LangGraph agent** (Tavily + Groq). Every claim is **validated against verbatim quotes** before display — anything ungrounded is dropped. Features threshold alerts, multi-country comparison, and bilingual PDF export. **No key, no sign-up, no wait** for visitors.
+A bilingual (FR/EN) research desk that generates grounded macro-financial briefs for **226 economies** across **17 IMF & World Bank indicators**. Combines quantitative reads with qualitative context pulled from trusted domains (Reuters, Bloomberg, IMF, FT).
 
 <a href="https://country-risk-desk.streamlit.app/" target="_blank"><img src="https://img.shields.io/badge/▶_Live_Demo-0A2C3A?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Demo" /></a>
 <a href="https://github.com/maxin-dac/country-risk-desk" target="_blank"><img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Code" /></a>
