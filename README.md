@@ -43,7 +43,7 @@ Macro-financial country risk analysis tool, based exclusively on official data a
 
 ---
 
-## Certifications
+## Certifications & Continuous improvement
 
 **Microsoft Certified**
 
@@ -54,11 +54,7 @@ Macro-financial country risk analysis tool, based exclusively on official data a
 
 ![Certiport IT Support](https://img.shields.io/badge/Certiport%20IT%20Support-E8452C?style=for-the-badge) ![Google Analytics](https://img.shields.io/badge/Google%20Analytics-E37400?style=for-the-badge&logo=googleanalytics&logoColor=white)
 
----
-
-## Applied Skills
-
-**17 Microsoft Applied Skills:**
+**Microsoft Applied Skills (17)**
 
 | Skill | Earned |
 |-------|--------|
@@ -68,7 +64,7 @@ Macro-financial country risk analysis tool, based exclusively on official data a
 | Get started developing agents in Microsoft Foundry | Jul 2026 |
 
 <details>
-<summary><b>Security, Compliance, Identity & Cloud Operations - 13 more</b></summary>
+<summary><b>13 more applied skills</b></summary>
 
 <br>
 
