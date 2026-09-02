@@ -34,7 +34,7 @@ An integrated bilingual platform (EN/FR) analyzing global economies using a PEST
 
 ### 🛰 [Country Risk Desk](https://github.com/maxin-dac/country-risk-desk)
 
-Macro-financial country risk analysis tool, based exclusively on official data and documented rules. Bilingual interface 🇫🇷/🇬🇧 · 226 economies · 14 indicators · sovereign ratings from S&P, Moody's, and Fitch · official sources.
+Macro-financial country risk analysis tool, based exclusively on official data and documented rules. It also includes a scenario analysis that assesses, for each indicator, how a change in value would affect the risk and opportunity signals. Bilingual interface 🇫🇷/🇬🇧 · 217 economies · 17 indicators · sovereign ratings from S&P, Moody's, and Fitch · official sources.
 
 <a href="https://country-risk-desk.streamlit.app/" target="_blank"><img src="https://img.shields.io/badge/▶_Live_Demo-0A2C3A?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Demo" /></a>
 <a href="https://github.com/maxin-dac/country-risk-desk" target="_blank"><img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Code" /></a>
