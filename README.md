@@ -94,17 +94,6 @@ Macro-financial country risk analysis tool, based exclusively on official data a
 
 ---
 
-## GitHub Stats
-
-<div align="center">
-  
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=maxin-dac&show_icons=true&theme=dark&hide_border=true&count_private=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=maxin-dac&layout=compact&theme=dark&hide_border=true)
-
-</div>
-
----
-
 <div align="center">
 
 <sub><b>Open to Data Analyst / BI Analyst / Market Research roles</b></sub>
