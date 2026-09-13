@@ -54,7 +54,7 @@ Macro-financial country risk analysis tool, based exclusively on official data a
 
 ![Certiport IT Support](https://img.shields.io/badge/Certiport%20IT%20Support-E8452C?style=for-the-badge) ![Google Analytics](https://img.shields.io/badge/Google%20Analytics-E37400?style=for-the-badge&logo=googleanalytics&logoColor=white)
 
-**Microsoft Applied Skills (16)**
+**Microsoft Applied Skills (17)**
 
 | Skill | Earned |
 |-------|--------|
@@ -64,12 +64,13 @@ Macro-financial country risk analysis tool, based exclusively on official data a
 | Get started developing agents in Microsoft Foundry | Jul 2026 |
 
 <details>
-<summary><b>12 more applied skills</b></summary>
+<summary><b>13 more applied skills</b></summary>
 
 <br>
 
 | Skill | Earned |
 |-------|--------|
+| Protect information in Microsoft 365 Copilot by using Microsoft Purview | Sep 2026 |
 | Manage GitHub secret scanning by using GitHub Copilot | Jul 2026 |
 | Resolve GitHub issues by using GitHub Copilot | Jul 2026 |
 | Accelerate AI-assisted development by using GitHub Copilot | Dec 2025 |
