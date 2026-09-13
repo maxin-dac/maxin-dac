@@ -5,6 +5,7 @@ import re
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from xml.sax.saxutils import escape as xml_escape
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
 GITHUB_USER = "maxin-dac"
@@ -159,6 +160,63 @@ def generate_stack_markdown(all_techs):
         return "_Stack auto-détecté : aucun repo public pour l'instant._"
     return " ".join(badges)
 
+# ─── TOP LANGUAGES (SVG auto-hébergé) ─────────────────────────────────────────
+
+TOP_LANGS_PATH = "assets/top-languages.svg"
+EXCLUDE_LANGS = {"HTML", "CSS", "Shell", "Dockerfile", "SCSS", "Makefile"}
+PALETTE = ["#F2B544", "#83C5BE", "#D96852", "#247F82", "#F9D276", "#F6A18A"]
+FONT = "Segoe UI, Helvetica, Arial, sans-serif"
+
+
+def fetch_top_languages(owner, repos, top_n=6):
+    """Agrège les octets par langage sur tous les repos -> [(lang, pct)]."""
+    totals = {}
+    for repo in repos:
+        for lang, nbytes in get_repo_languages(owner, repo["name"]).items():
+            if lang in EXCLUDE_LANGS:
+                continue
+            totals[lang] = totals.get(lang, 0) + nbytes
+    total = sum(totals.values())
+    if total == 0:
+        return []
+    ranked = sorted(totals.items(), key=lambda kv: kv[1], reverse=True)[:top_n]
+    return [(lang, 100.0 * nbytes / total) for lang, nbytes in ranked]
+
+
+def build_top_langs_svg(rows):
+    """Carte 'Top Languages' aux couleurs du portfolio (fond teal-900)."""
+    w, pad, row_h, title_h = 340, 18, 34, 46
+    h = title_h + len(rows) * row_h + pad
+    bar_w = w - 2 * pad
+    p = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Top languages">',
+        f'<rect width="{w}" height="{h}" rx="10" fill="#0C3038"/>',
+        f'<text x="{pad}" y="28" font-family="{FONT}" font-size="15" font-weight="700" fill="#F2B544">Top Languages</text>',
+        f'<rect x="{pad}" y="36" width="52" height="3" rx="1.5" fill="#F2B544"/>',
+    ]
+    y = title_h + 14
+    for i, (lang, pct) in enumerate(rows):
+        color = PALETTE[i % len(PALETTE)]
+        p.append(f'<text x="{pad}" y="{y}" font-family="{FONT}" font-size="12.5" fill="#FFFDF9">{xml_escape(lang)}</text>')
+        p.append(f'<text x="{w - pad}" y="{y}" text-anchor="end" font-family="{FONT}" font-size="12.5" fill="#83C5BE">{pct:.1f}%</text>')
+        p.append(f'<rect x="{pad}" y="{y + 8}" width="{bar_w}" height="6" rx="3" fill="#124D55"/>')
+        p.append(f'<rect x="{pad}" y="{y + 8}" width="{max(6.0, bar_w * pct / 100):.1f}" height="6" rx="3" fill="{color}"/>')
+        y += row_h
+    p.append("</svg>")
+    return "\n".join(p)
+
+
+def write_top_langs_svg(owner, repos):
+    """Génère le SVG top-languages dans assets/top-languages.svg."""
+    rows = fetch_top_languages(owner, repos)
+    if not rows:
+        print("  ⚠️  Aucun langage agrégé, SVG non généré.")
+        return
+    os.makedirs(os.path.dirname(TOP_LANGS_PATH), exist_ok=True)
+    with open(TOP_LANGS_PATH, "w", encoding="utf-8") as f:
+        f.write(build_top_langs_svg(rows))
+    print(f"OK : {TOP_LANGS_PATH} généré ({', '.join(l for l, _ in rows)}).")
+
 # ─── INJECTION README ─────────────────────────────────────────────────────────
 
 START_MARKER = "<!-- STACK:START -->"
@@ -204,6 +262,9 @@ def main():
     print(f"\nTotal : {len(all_techs)} technologies détectées")
     stack_md = generate_stack_markdown(all_techs)
     inject_into_readme(README_PATH, stack_md)
+    
+    # Génération du SVG top-languages
+    write_top_langs_svg(GITHUB_USER, repos)
 
 if __name__ == "__main__":
     main()

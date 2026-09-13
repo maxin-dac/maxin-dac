@@ -121,7 +121,7 @@ Macro-financial country risk analysis tool, based exclusively on official data a
 </td>
 <td width="45%">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=maxin-dac&langs_count=6&bg_color=0C3038&title_color=F2B544&text_color=FFFDF9&border_color=247F82&hide_border=true" width="100%" alt="Top Languages" />
+<img src="assets/top-languages.svg" width="100%" alt="Top Languages" />
 
 </td>
 </tr>
