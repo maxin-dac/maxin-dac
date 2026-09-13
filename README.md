@@ -1,15 +1,16 @@
 <div align="center">
 
-# 👋Hi, I'm Maxime
+# 👋 Hi, I'm Max !
 
-### BI & Data analyst
+### BI & Data Analyst
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=F5B800&center=true&vCenter=true&background=0D1117&width=650&height=50&lines=BI+%C2%B7+Data+Analyst;Python+%C2%B7+Power+BI+%C2%B7+Excel;Always+learning+%E2%80%94+AI%2C+Cloud%2C+Automation" alt="Typing SVG" />
 
 <br>
 
 <a href="https://www.linkedin.com/in/maximendacleu" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="https://learn.microsoft.com/en-us/users/maximendacleu-3447/transcript/vjjnkuwyoknz4nq?source=docs" target="_blank"><img src="https://img.shields.io/badge/Microsoft-00A4EF?style=for-the-badge&logo=microsoft&logoColor=white" alt="Microsoft" /></a>
+[![Portfolio](https://img.shields.io/badge/Portfolio-0C3038?style=for-the-badge&logo=googlechrome&logoColor=F2B544)](https://maximendacleu.github.io)
+<a href="https://github.com/maxin-dac?tab=repositories" target="_blank"><img src="https://img.shields.io/github/followers/maxin-dac?style=for-the-badge&logo=github&logoColor=white&color=181717&label=Follow" alt="GitHub" /></a>
 
 </div>
 
@@ -35,14 +36,25 @@ An integrated bilingual platform (EN/FR) analyzing global economies using a PEST
 
 ### 🛰 [Country Risk Desk](https://github.com/maxin-dac/country-risk-desk)
 
-Macro-financial country risk analysis tool, based exclusively on official data and documented rules. It also includes a scenario analysis that assesses, for each indicator, how a change in value would affect the risk and opportunity signals. Bilingual interface 🇫🇷/🇬🇧 · 217 economies · 17 indicators · sovereign ratings from S&P, Moody's, and Fitch · official sources.
+Macro-financial country risk analysis tool, based exclusively on official data and documented rules. Scenario analysis for risk/opportunity assessment. Bilingual interface 🇫🇷/🇬🇧 · 217 economies · 17 indicators · sovereign ratings from S&P, Moody's, and Fitch · official sources.
 
+<p align="left">
 <a href="https://country-risk-desk.onrender.com/" target="_blank"><img src="https://img.shields.io/badge/▶_Live_Demo-0A2C3A?style=for-the-badge&logo=render&logoColor=white" alt="Live Demo" /></a>
 <a href="https://github.com/maxin-dac/country-risk-desk" target="_blank"><img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Code" /></a>
 
+<sub>🚧 More projects in progress - open to collaborations!</sub>
+
 ---
 
-## Certifications & Continuous improvement
+## Tech Stack
+
+<!-- STACK:START -->
+<sub><em>Auto-detected from repositories</em></sub>
+<!-- STACK:END -->
+
+---
+
+## Certifications & Continuous Improvement
 
 **Microsoft Certified**
 
@@ -85,6 +97,37 @@ Macro-financial country risk analysis tool, based exclusively on official data a
 </details>
 
 🏅 [Microsoft Certifications & Applied Skills - Official Transcript](https://learn.microsoft.com/en-us/users/maximendacleu-3447/transcript/vjjnkuwyoknz4nq?source=docs)
+
+---
+
+## Activity
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center">
+
+**Repositories**  
+`9` public
+
+</td>
+<td align="center">
+
+**Primary stack**  
+Python · Power BI
+
+</td>
+<td align="center">
+
+**Last active**  
+![Last commit](https://img.shields.io/github/last-commit/maxin-dac/world-economic-dashboard?style=flat&logo=github&label=world-economic-dashboard)
+
+</td>
+</tr>
+</table>
+
+</div>
 
 ---
 
