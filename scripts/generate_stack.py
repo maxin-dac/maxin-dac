@@ -1,15 +1,24 @@
 #!/usr/bin/env python3
+"""
+README de profil auto-généré :
+  1. Stack & Tools  -> badges shields.io entre <!-- STACK:START/END -->
+  2. Activity card  -> assets/activity-card.svg (streak + views + repos + last commit)
+"""
 
 import os
 import re
+from datetime import date, timedelta
+from xml.sax.saxutils import escape as xml_escape
+
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
-from xml.sax.saxutils import escape as xml_escape
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
 GITHUB_USER = "maxin-dac"
 README_PATH = "README.md"
+MAIN_PROJECT = "world-economic-dashboard"
+ACTIVITY_SVG_PATH = "assets/activity-card.svg"
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 TIMEOUT = 15
 
@@ -31,7 +40,7 @@ HEADERS = {
 if TOKEN:
     HEADERS["Authorization"] = f"token {TOKEN}"
 
-# ─── BADGES ──────────────────────────────────────────────────
+# ─── BADGES STACK ─────────────────────────────────────────────────────────────
 BADGE_MAP = {
     "python":    ("Python",    "3776AB", "python"),
     "sql":       ("SQL",       "4479A1", ""),
@@ -82,6 +91,7 @@ def safe_get(url, params=None, raw=False):
         print(f"  ⚠️  Timeout : {url}")
         return None
 
+
 def get_repos(username):
     url = f"https://api.github.com/users/{username}/repos"
     params = {"per_page": 100, "sort": "updated", "type": "public"}
@@ -92,17 +102,19 @@ def get_repos(username):
     repos = resp.json()
     return [r for r in repos if not r["fork"] and not r["archived"]]
 
+
 def get_repo_languages(owner, repo):
     url = f"https://api.github.com/repos/{owner}/{repo}/languages"
     resp = safe_get(url)
     return resp.json() if (resp is not None and resp.status_code == 200) else {}
+
 
 def get_file_content(owner, repo, path):
     url = f"https://api.github.com/repos/{owner}/{repo}/contents/{path}"
     resp = safe_get(url, raw=True)
     return resp.text if (resp is not None and resp.status_code == 200) else None
 
-# ─── DETECTION ────────────────────────────────────────────────────────────────
+# ─── DÉTECTION STACK ──────────────────────────────────────────────────────────
 
 def detect_from_requirements(content):
     detected = set()
@@ -113,6 +125,7 @@ def detect_from_requirements(content):
                 detected.add(tech)
                 break
     return detected
+
 
 def detect_from_repo(repo):
     detected = set()
@@ -142,7 +155,6 @@ def detect_from_repo(repo):
 
     return detected
 
-# ─── GENERATION ───────────────────────────────────────────────────────────────
 
 def make_badge(label, color, logo):
     label_enc = label.replace(" ", "%20").replace("-", "--")
@@ -154,73 +166,177 @@ def make_badge(label, color, logo):
         logo_qs = ""
     return f"![{label}](https://img.shields.io/badge/{label_enc}-{color}?style=for-the-badge{logo_qs})"
 
+
 def generate_stack_markdown(all_techs):
     badges = [make_badge(*BADGE_MAP[t]) for t in DISPLAY_ORDER if t in all_techs]
     if not badges:
         return "_Stack auto-détecté : aucun repo public pour l'instant._"
     return " ".join(badges)
 
-# ─── TOP LANGUAGES (SVG auto-hébergé) ─────────────────────────────────────────
+# ─── DONNÉES D'ACTIVITÉ ───────────────────────────────────────────────────────
 
-TOP_LANGS_PATH = "assets/top-languages.svg"
-EXCLUDE_LANGS = {"HTML", "CSS", "Shell", "Dockerfile", "SCSS", "Makefile"}
-PALETTE = ["#F2B544", "#83C5BE", "#D96852", "#247F82", "#F9D276", "#F6A18A"]
+GRAPHQL_QUERY = """
+query($login: String!) {
+  user(login: $login) {
+    contributionsCollection {
+      contributionCalendar {
+        totalContributions
+        weeks { contributionDays { date contributionCount } }
+      }
+    }
+  }
+}
+"""
+
+
+def fetch_streak_data():
+    """Total contributions + streaks via GraphQL (token requis)."""
+    if not TOKEN:
+        print("  ⚠️  Pas de token : données de streak non récupérées.")
+        return None
+    try:
+        resp = session.post(
+            "https://api.github.com/graphql",
+            headers={**HEADERS, "Accept": "application/json"},
+            json={"query": GRAPHQL_QUERY, "variables": {"login": GITHUB_USER}},
+            timeout=TIMEOUT,
+        )
+    except requests.exceptions.RequestException as e:
+        print(f"  ⚠️  GraphQL injoignable : {e}")
+        return None
+    if resp.status_code != 200:
+        print(f"  ⚠️  GraphQL status {resp.status_code}.")
+        return None
+
+    cal = resp.json()["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+    counts = {
+        date.fromisoformat(d["date"]): d["contributionCount"]
+        for week in cal["weeks"] for d in week["contributionDays"]
+    }
+
+    today = date.today()
+    # Streak actuel (aujourd'hui, ou hier si pas encore de contribution aujourd'hui)
+    cur, d = 0, today
+    if counts.get(d, 0) == 0:
+        d -= timedelta(days=1)
+    while counts.get(d, 0) > 0:
+        cur += 1
+        d -= timedelta(days=1)
+
+    # Plus long streak + premières/dernières dates
+    longest = run = 0
+    ls_start = ls_end = run_start = None
+    for d in sorted(counts):
+        if counts[d] > 0:
+            if run == 0:
+                run_start = d
+            run += 1
+            if run > longest:
+                longest, ls_start, ls_end = run, run_start, d
+        else:
+            run = 0
+
+    active = [d for d in counts if counts[d] > 0]
+    return {
+        "total": cal["totalContributions"],
+        "since": min(active),
+        "current": cur,
+        "today": today,
+        "longest": longest,
+        "ls_start": ls_start,
+        "ls_end": ls_end,
+    }
+
+
+def fetch_profile_views():
+    """Lit le compteur komarev directement sur le SVG du badge."""
+    resp = safe_get(f"https://komarev.com/ghpvc/?username={GITHUB_USER}&style=flat-square")
+    if resp is None:
+        return "—"
+    vals = re.findall(r">([^<]+)</text>", resp.text)
+    return vals[-1].strip() if vals else "—"
+
+
+def fetch_public_repos():
+    resp = safe_get(f"https://api.github.com/users/{GITHUB_USER}")
+    if resp is not None and resp.status_code == 200:
+        return str(resp.json().get("public_repos", "—"))
+    return "—"
+
+
+def fetch_last_commit():
+    resp = safe_get(
+        f"https://api.github.com/repos/{GITHUB_USER}/{MAIN_PROJECT}/commits",
+        params={"per_page": 1},
+    )
+    if resp is None or resp.status_code != 200:
+        return "—"
+    iso = resp.json()[0]["commit"]["committer"]["date"][:10]
+    return date.fromisoformat(iso)
+
+# ─── CARTE ACTIVITÉ (SVG auto-hébergé) ────────────────────────────────────────
+
 FONT = "Segoe UI, Helvetica, Arial, sans-serif"
+FLAME = ("M12,26 C12,26 7,22 7,17.5 C7,14 9.5,11.5 10.5,8.5 C12.5,11 13,13 12.8,15 "
+         "C14.5,13.5 16,10.5 15.6,7 C18.5,10 20,13.5 20,17.5 C20,22 15,26 15,26 Z")
 
 
-def fetch_top_languages(owner, repos, top_n=6):
-    """Agrège les octets par langage sur tous les repos -> [(lang, pct)]."""
-    totals = {}
-    for repo in repos:
-        for lang, nbytes in get_repo_languages(owner, repo["name"]).items():
-            if lang in EXCLUDE_LANGS:
-                continue
-            totals[lang] = totals.get(lang, 0) + nbytes
-    total = sum(totals.values())
-    if total == 0:
-        return []
-    ranked = sorted(totals.items(), key=lambda kv: kv[1], reverse=True)[:top_n]
-    return [(lang, 100.0 * nbytes / total) for lang, nbytes in ranked]
+def build_activity_svg(streak, views, repos_count, last_commit):
+    cols = []
+    if streak:
+        cols.append(("value", str(streak["total"]), "Total Contributions",
+                     f'{streak["since"]:%b %d, %Y} - Present'))
+        cols.append(("ring", str(streak["current"]), "Current Streak",
+                     f'{streak["today"]:%b %d}'))
+        cols.append(("value", str(streak["longest"]), "Longest Streak",
+                     f'{streak["ls_start"]:%b %d} - {streak["ls_end"]:%b %d}'))
+    cols.append(("value", views, "Profile Views", "all time"))
+    cols.append(("value", repos_count, "Public Repos", "open source"))
+    cols.append(("value", f'{last_commit:%b %d}' if last_commit != "—" else "—",
+                 "Last Commit", MAIN_PROJECT))
 
-
-def build_top_langs_svg(rows):
-    """Carte 'Top Languages' aux couleurs du portfolio (fond teal-900)."""
-    w, pad, row_h, title_h = 340, 18, 34, 46
-    h = title_h + len(rows) * row_h + pad
-    bar_w = w - 2 * pad
+    cw, h = 132, 150
+    w = cw * len(cols)
     p = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Top languages">',
-        f'<rect width="{w}" height="{h}" rx="10" fill="#0C3038"/>',
-        f'<text x="{pad}" y="28" font-family="{FONT}" font-size="15" font-weight="700" fill="#F2B544">Top Languages</text>',
-        f'<rect x="{pad}" y="36" width="52" height="3" rx="1.5" fill="#F2B544"/>',
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="GitHub activity card">',
+        f'<rect width="{w}" height="{h}" rx="8" fill="#0C3038"/>',
     ]
-    y = title_h + 14
-    for i, (lang, pct) in enumerate(rows):
-        color = PALETTE[i % len(PALETTE)]
-        p.append(f'<text x="{pad}" y="{y}" font-family="{FONT}" font-size="12.5" fill="#FFFDF9">{xml_escape(lang)}</text>')
-        p.append(f'<text x="{w - pad}" y="{y}" text-anchor="end" font-family="{FONT}" font-size="12.5" fill="#83C5BE">{pct:.1f}%</text>')
-        p.append(f'<rect x="{pad}" y="{y + 8}" width="{bar_w}" height="6" rx="3" fill="#124D55"/>')
-        p.append(f'<rect x="{pad}" y="{y + 8}" width="{max(6.0, bar_w * pct / 100):.1f}" height="6" rx="3" fill="{color}"/>')
-        y += row_h
+    for i, (kind, value, label, sub) in enumerate(cols):
+        cx = i * cw + cw // 2
+        if i:
+            p.append(f'<line x1="{i * cw}" y1="22" x2="{i * cw}" y2="{h - 22}" stroke="#247F82" stroke-width="1" opacity="0.6"/>')
+        if kind == "ring":
+            p.append(f'<circle cx="{cx}" cy="62" r="26" fill="none" stroke="#F2B544" stroke-width="3.5"/>')
+            p.append(f'<path d="{FLAME}" fill="#D96852" transform="translate({cx - 13.5},30) scale(0.62)"/>')
+            p.append(f'<text x="{cx}" y="70" text-anchor="middle" font-family="{FONT}" font-size="21" font-weight="700" fill="#FFFDF9">{xml_escape(value)}</text>')
+        else:
+            p.append(f'<text x="{cx}" y="70" text-anchor="middle" font-family="{FONT}" font-size="21" font-weight="700" fill="#FFFDF9">{xml_escape(value)}</text>')
+        p.append(f'<text x="{cx}" y="96" text-anchor="middle" font-family="{FONT}" font-size="10.5" fill="#83C5BE">{xml_escape(label)}</text>')
+        p.append(f'<text x="{cx}" y="116" text-anchor="middle" font-family="{FONT}" font-size="9" fill="#8A9C9A">{xml_escape(sub)}</text>')
     p.append("</svg>")
     return "\n".join(p)
 
 
-def write_top_langs_svg(owner, repos):
-    """Génère le SVG top-languages dans assets/top-languages.svg."""
-    rows = fetch_top_languages(owner, repos)
-    if not rows:
-        print("  ⚠️  Aucun langage agrégé, SVG non généré.")
+def write_activity_svg():
+    streak = fetch_streak_data()
+    views = fetch_profile_views()
+    repos_count = fetch_public_repos()
+    last_commit = fetch_last_commit()
+
+    if streak is None and views == "—":
+        print("  ⚠️  Données d'activité indisponibles : SVG existant conservé.")
         return
-    os.makedirs(os.path.dirname(TOP_LANGS_PATH), exist_ok=True)
-    with open(TOP_LANGS_PATH, "w", encoding="utf-8") as f:
-        f.write(build_top_langs_svg(rows))
-    print(f"OK : {TOP_LANGS_PATH} généré ({', '.join(l for l, _ in rows)}).")
+
+    os.makedirs(os.path.dirname(ACTIVITY_SVG_PATH), exist_ok=True)
+    with open(ACTIVITY_SVG_PATH, "w", encoding="utf-8") as f:
+        f.write(build_activity_svg(streak, views, repos_count, last_commit))
+    print(f"OK : {ACTIVITY_SVG_PATH} généré.")
 
 # ─── INJECTION README ─────────────────────────────────────────────────────────
 
 START_MARKER = "<!-- STACK:START -->"
 END_MARKER = "<!-- STACK:END -->"
+
 
 def inject_into_readme(readme_path, stack_md):
     with open(readme_path, "r", encoding="utf-8") as f:
@@ -260,11 +376,10 @@ def main():
     all_techs |= {"git", "github", "powerbi", "excel", "vscode", "sql"}
 
     print(f"\nTotal : {len(all_techs)} technologies détectées")
-    stack_md = generate_stack_markdown(all_techs)
-    inject_into_readme(README_PATH, stack_md)
-    
-    # Génération du SVG top-languages
-    write_top_langs_svg(GITHUB_USER, repos)
+    inject_into_readme(README_PATH, generate_stack_markdown(all_techs))
+
+    write_activity_svg()
+
 
 if __name__ == "__main__":
     main()

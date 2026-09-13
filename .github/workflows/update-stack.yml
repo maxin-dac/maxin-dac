@@ -1,4 +1,4 @@
-name: Update Stack Badges
+name: Update Stack & Activity
 
 on:
   schedule:
@@ -25,15 +25,18 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Generate stack icons
+      - name: Generate stack badges & activity card
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/generate_stack.py
+
+      - name: Clean obsolete assets
+        run: rm -f assets/top-languages.svg
 
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git diff --staged --quiet || git commit -m "chore: auto-update stack icons"
+          git add README.md assets/
+          git diff --staged --quiet || git commit -m "chore: auto-update stack & activity card"
           git push

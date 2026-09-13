@@ -105,27 +105,8 @@ Macro-financial country risk analysis tool, based exclusively on official data a
 
 <div align="center">
 
-![Profile Views](https://komarev.com/ghpvc/?username=maxin-dac&color=247F82&style=flat-square&label=Profile+Views)
-![Public repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Fmaxin-dac&query=%24.public_repos&style=flat-square&label=Public+repos&color=D99624&logo=github&logoColor=white)
-![Last commit](https://img.shields.io/github/last-commit/maxin-dac/world-economic-dashboard?style=flat-square&logo=github&logoColor=white&label=world-economic-dashboard&color=124D55)
+<img src="assets/activity-card.svg" width="792" alt="Contributions, streak, profile views, public repos, last commit" />
 
-</div>
-
-<div align="center">
-<table>
-<tr>
-<td width="55%">
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=maxin-dac&theme=dark&hide_border=true&background=0C3038&ring=F2B544&fire=D96852&currStreakNum=FFFDF9&currStreakLabel=F2B544&sideNums=FFFDF9&sideLabels=83C5BE&dates=83C5BE" width="100%" alt="GitHub Streak" />
-
-</td>
-<td width="45%">
-
-<img src="assets/top-languages.svg" width="100%" alt="Top Languages" />
-
-</td>
-</tr>
-</table>
 </div>
 
 <sub><b>Open to Data Analyst / BI Analyst / Market Research roles</b></sub>
