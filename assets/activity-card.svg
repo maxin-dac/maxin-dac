@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="792" height="150" viewBox="0 0 792 150" role="img" aria-label="GitHub activity card">
+<rect width="792" height="150" rx="8" fill="#0C3038"/>
+<text x="66" y="70" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#FFFDF9">588</text>
+<text x="66" y="96" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" fill="#83C5BE">Total Contributions</text>
+<text x="66" y="116" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9" fill="#8A9C9A">Dec 01, 2025 - Present</text>
+<line x1="132" y1="22" x2="132" y2="128" stroke="#247F82" stroke-width="1" opacity="0.6"/>
+<circle cx="198" cy="62" r="26" fill="none" stroke="#F2B544" stroke-width="3.5"/>
+<path d="M12,26 C12,26 7,22 7,17.5 C7,14 9.5,11.5 10.5,8.5 C12.5,11 13,13 12.8,15 C14.5,13.5 16,10.5 15.6,7 C18.5,10 20,13.5 20,17.5 C20,22 15,26 15,26 Z" fill="#D96852" transform="translate(184.5,30) scale(0.62)"/>
+<text x="198" y="70" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#FFFDF9">1</text>
+<text x="198" y="96" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" fill="#83C5BE">Current Streak</text>
+<text x="198" y="116" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9" fill="#8A9C9A">Sep 13</text>
+<line x1="264" y1="22" x2="264" y2="128" stroke="#247F82" stroke-width="1" opacity="0.6"/>
+<text x="330" y="70" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#FFFDF9">9</text>
+<text x="330" y="96" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" fill="#83C5BE">Longest Streak</text>
+<text x="330" y="116" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9" fill="#8A9C9A">Jul 28 - Aug 05</text>
+<line x1="396" y1="22" x2="396" y2="128" stroke="#247F82" stroke-width="1" opacity="0.6"/>
+<text x="462" y="70" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#FFFDF9">4</text>
+<text x="462" y="96" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" fill="#83C5BE">Profile Views</text>
+<text x="462" y="116" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9" fill="#8A9C9A">all time</text>
+<line x1="528" y1="22" x2="528" y2="128" stroke="#247F82" stroke-width="1" opacity="0.6"/>
+<text x="594" y="70" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#FFFDF9">9</text>
+<text x="594" y="96" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" fill="#83C5BE">Public Repos</text>
+<text x="594" y="116" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9" fill="#8A9C9A">open source</text>
+<line x1="660" y1="22" x2="660" y2="128" stroke="#247F82" stroke-width="1" opacity="0.6"/>
+<text x="726" y="70" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#FFFDF9">Sep 08</text>
+<text x="726" y="96" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" fill="#83C5BE">Last Commit</text>
+<text x="726" y="116" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9" fill="#8A9C9A">world-economic-dashboard</text>
+</svg>
