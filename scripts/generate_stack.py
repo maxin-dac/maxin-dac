@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-README de profil auto-généré :
-  1. Stack & Tools  -> badges shields.io entre <!-- STACK:START/END -->
-  2. Activity card  -> assets/activity-card.svg (streak + views + repos + last commit)
+README :
+  1. Stack & Tools  -> badges shields.io <!-- STACK:START/END -->
+  2. Activity card  -> assets/activity-card.svg
 """
 
 import os
@@ -114,7 +114,7 @@ def get_file_content(owner, repo, path):
     resp = safe_get(url, raw=True)
     return resp.text if (resp is not None and resp.status_code == 200) else None
 
-# ─── DÉTECTION STACK ──────────────────────────────────────────────────────────
+# ─── DETECTION STACK ──────────────────────────────────────────────────────────
 
 def detect_from_requirements(content):
     detected = set()
@@ -173,7 +173,7 @@ def generate_stack_markdown(all_techs):
         return "_Stack auto-détecté : aucun repo public pour l'instant._"
     return " ".join(badges)
 
-# ─── DONNÉES D'ACTIVITÉ ───────────────────────────────────────────────────────
+# ─── ACTIVITY DATA ───────────────────────────────────────────────────────
 
 GRAPHQL_QUERY = """
 query($login: String!) {
@@ -215,7 +215,7 @@ def fetch_streak_data():
     }
 
     today = date.today()
-    # Streak actuel (aujourd'hui, ou hier si pas encore de contribution aujourd'hui)
+    
     cur, d = 0, today
     if counts.get(d, 0) == 0:
         d -= timedelta(days=1)
@@ -223,7 +223,7 @@ def fetch_streak_data():
         cur += 1
         d -= timedelta(days=1)
 
-    # Plus long streak + premières/dernières dates
+    
     longest = run = 0
     ls_start = ls_end = run_start = None
     for d in sorted(counts):
@@ -274,7 +274,7 @@ def fetch_last_commit():
     iso = resp.json()[0]["commit"]["committer"]["date"][:10]
     return date.fromisoformat(iso)
 
-# ─── CARTE ACTIVITÉ (SVG auto-hébergé) ────────────────────────────────────────
+# ─── CARTE ACTIVITÉ (SVG auto-hébergé, thème clair) ───────────────────────────
 
 FONT = "Segoe UI, Helvetica, Arial, sans-serif"
 FLAME = ("M12,26 C12,26 7,22 7,17.5 C7,14 9.5,11.5 10.5,8.5 C12.5,11 13,13 12.8,15 "
@@ -282,6 +282,7 @@ FLAME = ("M12,26 C12,26 7,22 7,17.5 C7,14 9.5,11.5 10.5,8.5 C12.5,11 13,13 12.8,
 
 
 def build_activity_svg(streak, views, repos_count, last_commit):
+    """Carte activité — thème clair, mêmes contours que les bannières."""
     cols = []
     if streak:
         cols.append(("value", str(streak["total"]), "Total Contributions",
@@ -292,27 +293,56 @@ def build_activity_svg(streak, views, repos_count, last_commit):
                      f'{streak["ls_start"]:%b %d} - {streak["ls_end"]:%b %d}'))
     cols.append(("value", views, "Profile Views", "all time"))
     cols.append(("value", repos_count, "Public Repos", "open source"))
-    cols.append(("value", f'{last_commit:%b %d}' if last_commit != "—" else "—",
+    cols.append(("value",
+                 f'{last_commit:%b %d}' if last_commit != "—" else "—",
                  "Last Commit", MAIN_PROJECT))
 
     cw, h = 132, 150
     w = cw * len(cols)
     p = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="GitHub activity card">',
-        f'<rect width="{w}" height="{h}" rx="8" fill="#0C3038"/>',
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
+        f'viewBox="0 0 {w} {h}" role="img" aria-label="GitHub activity card">',
+        '<defs>',
+        '<linearGradient id="abg" x1="0" y1="0" x2="0" y2="1">',
+        '<stop offset="0" stop-color="#FFFDF9"/>',
+        '<stop offset="1" stop-color="#EEF8F6"/>',
+        '</linearGradient>',
+        '<linearGradient id="arule" x1="0" y1="0" x2="1" y2="0">',
+        '<stop offset="0" stop-color="#F2B544"/>',
+        '<stop offset="0.5" stop-color="#247F82">',
+        '<animate attributeName="stop-color" values="#247F82;#D96852;#247F82" '
+        'dur="12s" repeatCount="indefinite"/>',
+        '</stop>',
+        '<stop offset="1" stop-color="#D96852"/>',
+        '</linearGradient>',
+        '<pattern id="adots" width="26" height="26" patternUnits="userSpaceOnUse">',
+        '<circle cx="1.5" cy="1.5" r="1" fill="#B7DFD9" opacity="0.45"/>',
+        '</pattern>',
+        f'<clipPath id="aclip"><rect width="{w}" height="{h}" rx="8"/></clipPath>',
+        '</defs>',
+        f'<rect width="{w}" height="{h}" rx="8" fill="url(#abg)"/>',
+        '<g clip-path="url(#aclip)">',
+        f'<rect width="{w}" height="{h}" fill="url(#adots)"/>',
+        f'<rect width="{w}" height="4" fill="url(#arule)"/>',
+        f'<rect y="{h - 4}" width="{w}" height="4" fill="url(#arule)"/>',
+        '</g>',
     ]
     for i, (kind, value, label, sub) in enumerate(cols):
         cx = i * cw + cw // 2
         if i:
-            p.append(f'<line x1="{i * cw}" y1="22" x2="{i * cw}" y2="{h - 22}" stroke="#247F82" stroke-width="1" opacity="0.6"/>')
+            p.append(f'<line x1="{i * cw}" y1="24" x2="{i * cw}" y2="{h - 24}" '
+                     f'stroke="#B7DFD9" stroke-width="1" opacity="0.8"/>')
         if kind == "ring":
-            p.append(f'<circle cx="{cx}" cy="62" r="26" fill="none" stroke="#F2B544" stroke-width="3.5"/>')
-            p.append(f'<path d="{FLAME}" fill="#D96852" transform="translate({cx - 13.5},30) scale(0.62)"/>')
-            p.append(f'<text x="{cx}" y="70" text-anchor="middle" font-family="{FONT}" font-size="21" font-weight="700" fill="#FFFDF9">{xml_escape(value)}</text>')
-        else:
-            p.append(f'<text x="{cx}" y="70" text-anchor="middle" font-family="{FONT}" font-size="21" font-weight="700" fill="#FFFDF9">{xml_escape(value)}</text>')
-        p.append(f'<text x="{cx}" y="96" text-anchor="middle" font-family="{FONT}" font-size="10.5" fill="#83C5BE">{xml_escape(label)}</text>')
-        p.append(f'<text x="{cx}" y="116" text-anchor="middle" font-family="{FONT}" font-size="9" fill="#8A9C9A">{xml_escape(sub)}</text>')
+            p.append(f'<circle cx="{cx}" cy="62" r="26" fill="none" '
+                     f'stroke="#F2B544" stroke-width="3.5"/>')
+            p.append(f'<path d="{FLAME}" fill="#D96852" '
+                     f'transform="translate({cx - 13.5},30) scale(0.62)"/>')
+        p.append(f'<text x="{cx}" y="70" text-anchor="middle" font-family="{FONT}" '
+                 f'font-size="21" font-weight="700" fill="#124D55">{xml_escape(value)}</text>')
+        p.append(f'<text x="{cx}" y="96" text-anchor="middle" font-family="{FONT}" '
+                 f'font-size="10.5" fill="#247F82">{xml_escape(label)}</text>')
+        p.append(f'<text x="{cx}" y="116" text-anchor="middle" font-family="{FONT}" '
+                 f'font-size="9" fill="#637875">{xml_escape(sub)}</text>')
     p.append("</svg>")
     return "\n".join(p)
 
