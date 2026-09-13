@@ -105,32 +105,28 @@ Macro-financial country risk analysis tool, based exclusively on official data a
 
 <div align="center">
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=maxin-dac&theme=dark&hide_border=true&background=0D1117&ring=F5B800&fire=F5B800&currStreakLabel=F5B800&dates=FFFFFF)
+![Profile Views](https://komarev.com/ghpvc/?username=maxin-dac&color=247F82&style=flat-square&label=Profile+Views)
+![Public repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Fmaxin-dac&query=%24.public_repos&style=flat-square&label=Public+repos&color=D99624&logo=github&logoColor=white)
+![Last commit](https://img.shields.io/github/last-commit/maxin-dac/world-economic-dashboard?style=flat-square&logo=github&logoColor=white&label=world-economic-dashboard&color=124D55)
 
 </div>
 
 <div align="center">
-
 <table>
 <tr>
-<td align="center">
+<td width="55%">
 
-**Repositories**  
-![Repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Fmaxin-dac&query=%24.public_repos&style=flat-square&label=Public&color=0078D4&logo=github&logoColor=white)
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=maxin-dac&theme=dark&hide_border=true&background=0C3038&ring=F2B544&fire=D96852&currStreakNum=FFFDF9&currStreakLabel=F2B544&sideNums=FFFDF9&sideLabels=83C5BE&dates=83C5BE" width="100%" alt="GitHub Streak" />
 
 </td>
-<td align="center">
+<td width="45%">
 
-**Last active**  
-![Last Commit](https://img.shields.io/github/last-commit/maxin-dac/world-economic-dashboard?style=flat-square&logo=github&label=world-economic-dashboard)
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=maxin-dac&langs_count=6&bg_color=0C3038&title_color=F2B544&text_color=FFFDF9&border_color=247F82&hide_border=true" width="100%" alt="Top Languages" />
 
 </td>
 </tr>
 </table>
-
 </div>
-
-<div align="center">
 
 <sub><b>Open to Data Analyst / BI Analyst / Market Research roles</b></sub>
 
