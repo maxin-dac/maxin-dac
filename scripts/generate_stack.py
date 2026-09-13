@@ -164,7 +164,7 @@ def make_badge(label, color, logo):
         logo_qs = f"&logo={logo}&logoColor=white"
     else:
         logo_qs = ""
-    return f"![{label}](https://img.shields.io/badge/{label_enc}-{color}?style=for-the-badge{logo_qs})"
+    return f"![{label}](https://img.shields.io/badge/{label_enc}-{color}?style=flat-square{logo_qs})"
 
 
 def generate_stack_markdown(all_techs):
