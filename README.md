@@ -1,6 +1,6 @@
 <div align="center">
 
-# 👋 Hi, I'm Max !
+# 👋 Hi, I'm Max!
 
 ### BI & Data Analyst
 
