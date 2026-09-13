@@ -46,12 +46,11 @@ Macro-financial country risk analysis tool, based exclusively on official data a
 
 **Microsoft Certified**
 
-![DP-900 Data](https://img.shields.io/badge/DP--900%20Data-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white) ![PL-900 Power Platform](https://img.shields.io/badge/PL--900%20Power%20Platform-742774?style=for-the-badge&logo=microsoft&logoColor=white) ![AZ-900 Azure](https://img.shields.io/badge/AZ--900%20Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white) ![SC-900 Security](https://img.shields.io/badge/SC--900%20Security-00A4EF?style=for-the-badge&logo=microsoft&logoColor=white) 
-![DP-900 Data](https://img.shields.io/badge/DP--900%20Data-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white) 
+<img src="https://img.shields.io/badge/DP--900%20Data-0078D4?style=flat&logo=microsoftazure&logoColor=white" alt="DP-900 Data" /> <img src="https://img.shields.io/badge/PL--900%20Power%20Platform-742774?style=flat&logo=microsoft&logoColor=white" alt="PL-900 Power Platform" /> <img src="https://img.shields.io/badge/AZ--900%20Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white" alt="AZ-900 Azure" /> <img src="https://img.shields.io/badge/SC--900%20Security-00A4EF?style=flat&logo=microsoft&logoColor=white" alt="SC-900 Security" />
 
 **Other**
 
-![Certiport IT Support](https://img.shields.io/badge/Certiport%20IT%20Support-E8452C?style=for-the-badge) ![Google Analytics](https://img.shields.io/badge/Google%20Analytics-E37400?style=for-the-badge&logo=googleanalytics&logoColor=white)
+<img src="https://img.shields.io/badge/Certiport%20IT%20Support-E8452C?style=flat" alt="Certiport IT Support" /> <img src="https://img.shields.io/badge/Google%20Analytics-E37400?style=flat&logo=googleanalytics&logoColor=white" alt="Google Analytics" />
 
 **Microsoft Applied Skills (17)**
 
