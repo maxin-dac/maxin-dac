@@ -1,3 +1,5 @@
+<img src="assets/banner-header.svg" alt="" width="100%" />
+
 <div align="center">
 
 # 👋 Hi, I'm Max!
@@ -133,3 +135,5 @@ Macro-financial country risk analysis tool, based exclusively on official data a
 <sub><b>Open to Data Analyst / BI Analyst / Market Research roles</b></sub>
 
 </div>
+
+<img src="assets/banner-footer.svg" alt="" width="100%" />
