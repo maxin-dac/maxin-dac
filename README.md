@@ -9,8 +9,7 @@
 <br>
 
 <a href="https://www.linkedin.com/in/maximendacleu" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-[![Portfolio](https://img.shields.io/badge/Portfolio-0C3038?style=for-the-badge&logo=googlechrome&logoColor=F2B544)](https://maximendacleu.github.io)
-<a href="https://github.com/maxin-dac?tab=repositories" target="_blank"><img src="https://img.shields.io/github/followers/maxin-dac?style=for-the-badge&logo=github&logoColor=white&color=181717&label=Follow" alt="GitHub" /></a>
+[![Portfolio](https://img.shields.io/badge/Portfolio-0C3038?style=for-the-badge&logo=googlechrome&logoColor=F2B544)](https://maxin-dac.github.io)
 
 </div>
 
@@ -58,11 +57,11 @@ Macro-financial country risk analysis tool, based exclusively on official data a
 
 **Microsoft Certified**
 
-<img src="https://img.shields.io/badge/DP--900%20Data-0078D4?style=flat&logo=microsoftazure&logoColor=white" alt="DP-900 Data" /> <img src="https://img.shields.io/badge/PL--900%20Power%20Platform-742774?style=flat&logo=microsoft&logoColor=white" alt="PL-900 Power Platform" /> <img src="https://img.shields.io/badge/AZ--900%20Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white" alt="AZ-900 Azure" /> <img src="https://img.shields.io/badge/SC--900%20Security-00A4EF?style=flat&logo=microsoft&logoColor=white" alt="SC-900 Security" />
+<img src="https://img.shields.io/badge/DP--900%20Azure%20Data-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="DP-900 Data" /> <img src="https://img.shields.io/badge/PL--900%20Power%20Platform-742774?style=flat-square&logo=microsoft&logoColor=white" alt="PL-900 Power Platform" /> <img src="https://img.shields.io/badge/AZ--900%20Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="AZ-900 Azure" /> <img src="https://img.shields.io/badge/SC--900%20Security%20Compliance%20&%20Identity-00A4EF?style=flat-square&logo=microsoft&logoColor=white" alt="SC--900%20Security%20Compliance%20&%20Identity" />
 
 **Other**
 
-<img src="https://img.shields.io/badge/Certiport%20IT%20Support-E8452C?style=flat" alt="Certiport IT Support" /> <img src="https://img.shields.io/badge/Google%20Analytics-E37400?style=flat&logo=googleanalytics&logoColor=white" alt="Google Analytics" />
+<img src="https://img.shields.io/badge/Certiport%20IT%20Support-E8452C?style=flat-square" alt="Certiport IT Support" /> <img src="https://img.shields.io/badge/Google%20Analytics-E37400?style=flat-square" alt="Google Analytics" />
 
 **Microsoft Applied Skills (17)**
 
@@ -104,32 +103,30 @@ Macro-financial country risk analysis tool, based exclusively on official data a
 
 <div align="center">
 
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=maxin-dac&theme=dark&hide_border=true&background=0D1117&ring=F5B800&fire=F5B800&currStreakLabel=F5B800&dates=FFFFFF)
+
+</div>
+
+<div align="center">
+
 <table>
 <tr>
 <td align="center">
 
 **Repositories**  
-`9` public
-
-</td>
-<td align="center">
-
-**Primary stack**  
-Python · Power BI
+![Repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Fmaxin-dac&query=%24.public_repos&style=flat-square&label=Public&color=0078D4&logo=github&logoColor=white)
 
 </td>
 <td align="center">
 
 **Last active**  
-![Last commit](https://img.shields.io/github/last-commit/maxin-dac/world-economic-dashboard?style=flat&logo=github&label=world-economic-dashboard)
+![Last Commit](https://img.shields.io/github/last-commit/maxin-dac/world-economic-dashboard?style=flat-square&logo=github&label=world-economic-dashboard)
 
 </td>
 </tr>
 </table>
 
 </div>
-
----
 
 <div align="center">
 
