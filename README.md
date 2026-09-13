@@ -111,6 +111,8 @@ Macro-financial country risk analysis tool, based exclusively on official data a
 
 </div>
 
+<div align="center">
+
 <sub><b>Open to Data Analyst / BI Analyst / Market Research roles</b></sub>
 
 </div>
