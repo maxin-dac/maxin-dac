@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Pied de page animé">
+  <defs>
+    <pattern id="fdots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#17656B" opacity="0.45"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="120" fill="#0C3038"/>
+  <rect width="1200" height="120" fill="url(#fdots)"/>
+
+  <!-- flux de données -->
+  <g stroke-linecap="round" fill="none">
+    <path d="M0,44 H1200" stroke="#124D55" stroke-width="2"/>
+    <path d="M0,44 H1200" stroke="#83C5BE" stroke-width="2" stroke-dasharray="70 1130" opacity="0.8">
+      <animate attributeName="stroke-dashoffset" values="1200;0" dur="7s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0,62 H1200" stroke="#124D55" stroke-width="2"/>
+    <path d="M0,62 H1200" stroke="#F2B544" stroke-width="2" stroke-dasharray="110 1090" opacity="0.9">
+      <animate attributeName="stroke-dashoffset" values="0;1200" dur="9s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0,80 H1200" stroke="#124D55" stroke-width="2"/>
+    <path d="M0,80 H1200" stroke="#D96852" stroke-width="2" stroke-dasharray="50 1150" opacity="0.75">
+      <animate attributeName="stroke-dashoffset" values="1200;0" dur="11s" begin="1s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- égaliseur discret -->
+  <g fill="#83C5BE" opacity="0.5">
+    <circle cx="1120" cy="62" r="3">
+      <animate attributeName="cy" values="62;54;62" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1140" cy="62" r="3">
+      <animate attributeName="cy" values="62;70;62" dur="2.6s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1160" cy="62" r="3">
+      <animate attributeName="cy" values="62;52;62" dur="2.9s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <rect width="1200" height="3" fill="#F2B544" opacity="0.9"/>
+  <rect y="117" width="1200" height="3" fill="#247F82"/>
+</svg>

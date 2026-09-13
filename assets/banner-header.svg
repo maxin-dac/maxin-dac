@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 260" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Bannière animée data">
+  <defs>
+    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.3" fill="#17656B" opacity="0.5"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#F2B544" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#F2B544" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="260" fill="#0C3038"/>
+  <rect width="1200" height="260" fill="url(#dots)"/>
+  <circle cx="960" cy="30" r="230" fill="url(#glow)"/>
+
+  <!-- vagues dérivantes (boucles sans couture) -->
+  <path fill="#124D55" opacity="0.55" d="M0,190 C100,160 200,220 300,190 C400,160 500,220 600,190 C700,160 800,220 900,190 C1000,160 1100,220 1200,190 C1300,160 1400,220 1500,190 C1600,160 1700,220 1800,190 L1800,260 L0,260 Z">
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="-600 0" dur="18s" repeatCount="indefinite"/>
+  </path>
+  <path fill="#17656B" opacity="0.35" d="M0,212 C150,188 250,236 400,212 C550,188 650,236 800,212 C950,188 1050,236 1200,212 C1350,188 1450,236 1600,212 C1750,188 1850,236 2000,212 L2000,260 L0,260 Z">
+    <animateTransform attributeName="transform" type="translate" from="-800 0" to="0 0" dur="26s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- barres qui respirent -->
+  <g>
+    <rect x="984" y="196" width="14" height="40" fill="#83C5BE" opacity="0.45">
+      <animate attributeName="y" values="196;176;196" dur="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="height" values="40;60;40" dur="3.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1008" y="182" width="14" height="54" fill="#83C5BE" opacity="0.45">
+      <animate attributeName="y" values="182;202;182" dur="2.7s" begin="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="height" values="54;34;54" dur="2.7s" begin="0.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1032" y="170" width="14" height="66" fill="#F2B544" opacity="0.75">
+      <animate attributeName="y" values="170;150;170" dur="3.6s" begin="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="height" values="66;86;66" dur="3.6s" begin="0.8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1056" y="188" width="14" height="48" fill="#83C5BE" opacity="0.45">
+      <animate attributeName="y" values="188;168;188" dur="2.9s" begin="1.1s" repeatCount="indefinite"/>
+      <animate attributeName="height" values="48;68;48" dur="2.9s" begin="1.1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1080" y="176" width="14" height="60" fill="#83C5BE" opacity="0.45">
+      <animate attributeName="y" values="176;196;176" dur="3.4s" begin="0.2s" repeatCount="indefinite"/>
+      <animate attributeName="height" values="60;40;60" dur="3.4s" begin="0.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1104" y="162" width="14" height="74" fill="#D96852" opacity="0.6">
+      <animate attributeName="y" values="162;146;162" dur="3.1s" begin="0.6s" repeatCount="indefinite"/>
+      <animate attributeName="height" values="74;90;74" dur="3.1s" begin="0.6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- sparkline secondaire (coral) -->
+  <path pathLength="1000" d="M60,196 L200,178 L340,190 L480,160 L620,172 L760,142 L900,154 L1040,128 L1140,136" fill="none" stroke="#D96852" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.8" stroke-dasharray="1000" stroke-dashoffset="0">
+    <animate attributeName="stroke-dashoffset" values="1000;0;0" keyTimes="0;0.75;1" dur="9s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- sparkline principale (yellow) qui se trace -->
+  <path id="spark1" pathLength="1000" d="M60,150 L180,120 L300,138 L420,96 L540,112 L660,70 L780,88 L900,52 L1020,66 L1140,34" fill="none" stroke="#F2B544" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1000" stroke-dashoffset="0">
+    <animate attributeName="stroke-dashoffset" values="1000;0;0" keyTimes="0;0.7;1" dur="7s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- point voyageur le long de la sparkline -->
+  <circle r="5" fill="#FFF1C9" opacity="0">
+    <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.92;1" dur="7s" repeatCount="indefinite"/>
+    <animateMotion dur="7s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.7;1" calcMode="linear">
+      <mpath href="#spark1" xlink:href="#spark1"/>
+    </animateMotion>
+  </circle>
+
+  <!-- nœuds pulsants -->
+  <g fill="#FFFDF9">
+    <circle cx="420" cy="96" r="3">
+      <animate attributeName="r" values="3;5.5;3" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="660" cy="70" r="3">
+      <animate attributeName="r" values="3;5.5;3" dur="2.4s" begin="0.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.4s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="52" r="3">
+      <animate attributeName="r" values="3;5.5;3" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <rect width="1200" height="3" fill="#F2B544" opacity="0.9"/>
+  <rect y="257" width="1200" height="3" fill="#247F82"/>
+</svg>
