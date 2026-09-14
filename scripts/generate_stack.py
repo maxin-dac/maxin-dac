@@ -291,7 +291,7 @@ def build_activity_svg(streak, views, repos_count, last_commit):
                      f'{streak["today"]:%b %d}'))
         cols.append(("value", str(streak["longest"]), "Longest Streak",
                      f'{streak["ls_start"]:%b %d} - {streak["ls_end"]:%b %d}'))
-    cols.append(("value", views, "Profile Views", "since sep 13, 2026"))
+    cols.append(("value", views, "Profile Views", "Since Sep 13, 2026"))
     cols.append(("value", repos_count, "Public Repos", "Open source"))
     cols.append(("value",
                  f'{last_commit:%b %d}' if last_commit != "—" else "—",
