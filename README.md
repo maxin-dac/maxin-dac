@@ -67,14 +67,15 @@ Macro-financial country risk analysis tool, based exclusively on official data a
 
 <img src="https://img.shields.io/badge/Certiport%20IT%20Support-E8452C?style=flat-square" alt="Certiport IT Support" /> <img src="https://img.shields.io/badge/Google%20Analytics-E37400?style=flat-square" alt="Google Analytics" />
 
-**Microsoft Applied Skills (17)**
+**Microsoft Applied Skills (18)**
 
 | Skill | Earned |
 |-------|--------|
-| Implement a Real-Time Intelligence solution with Microsoft Fabric | Dec 2025 |
-| Generate reports with AI research agents | Nov 2025 |
-| Streamline business workflows with AI chat | Dec 2025 |
+| Develop an agent with integrated tools | Sep 2026 |
 | Get started developing agents in Microsoft Foundry | Jul 2026 |
+| Implement a Real-Time Intelligence solution with Microsoft Fabric | Dec 2025 |
+| Streamline business workflows with AI chat | Dec 2025 |
+| Generate reports with AI research agents | Nov 2025 |
 
 <details>
 <summary><b>13 more applied skills</b></summary>
