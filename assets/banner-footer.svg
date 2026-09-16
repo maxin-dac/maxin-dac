@@ -16,22 +16,19 @@
     </pattern>
   </defs>
 
-  <rect width="1200" height="120" fill="url(#fbg)"/>
+
   <rect width="1200" height="120" fill="url(#fdots)"/>
 
-  <!-- flux de données -->
+  <!-- flux de données ondulé -->
   <g fill="none" stroke-linecap="round">
-    <path d="M0,42 H1200" stroke="#D9E2E0" stroke-width="2"/>
-    <path d="M0,42 H1200" stroke="#247F82" stroke-width="2.5" stroke-dasharray="70 1130" opacity="0.85">
-      <animate attributeName="stroke-dashoffset" values="1200;0" dur="8s" repeatCount="indefinite"/>
+    <path d="M0,60 C150,30 250,90 400,60 C550,30 650,90 800,60 C950,30 1050,90 1200,60 C1350,30 1450,90 1600,60 C1750,30 1850,90 2000,60" stroke="#B7DFD9" stroke-width="12" opacity="0.4">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-800 0" dur="20s" repeatCount="indefinite"/>
     </path>
-    <path d="M0,60 H1200" stroke="#D9E2E0" stroke-width="2"/>
-    <path d="M0,60 H1200" stroke="#F2B544" stroke-width="2.5" stroke-dasharray="110 1090" opacity="0.9">
-      <animate attributeName="stroke-dashoffset" values="0;1200" dur="10s" repeatCount="indefinite"/>
+    <path d="M0,75 C100,55 200,95 300,75 C400,55 500,95 600,75 C700,55 800,95 900,75 C1000,55 1100,95 1200,75 C1300,55 1400,95 1500,75 C1600,55 1700,95 1800,75" stroke="#F2B544" stroke-width="6" opacity="0.6">
+      <animateTransform attributeName="transform" type="translate" from="-600 0" to="0 0" dur="15s" repeatCount="indefinite"/>
     </path>
-    <path d="M0,78 H1200" stroke="#D9E2E0" stroke-width="2"/>
-    <path d="M0,78 H1200" stroke="#D96852" stroke-width="2.5" stroke-dasharray="50 1150" opacity="0.8">
-      <animate attributeName="stroke-dashoffset" values="1200;0" dur="12s" begin="1s" repeatCount="indefinite"/>
+    <path d="M0,45 C120,25 240,65 360,45 C480,25 600,65 720,45 C840,25 960,65 1080,45 C1200,25 1320,65 1440,45 C1560,25 1680,65 1800,45" stroke="#D96852" stroke-width="4" opacity="0.5">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-720 0" dur="12s" repeatCount="indefinite"/>
     </path>
   </g>
 
@@ -48,6 +45,5 @@
     </circle>
   </g>
 
-  <rect width="1200" height="4" fill="url(#frule)"/>
-  <rect y="116" width="1200" height="4" fill="url(#frule)"/>
+
 </svg>
