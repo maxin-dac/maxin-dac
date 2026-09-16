@@ -29,9 +29,7 @@
   </defs>
 
 
-  <rect width="1200" height="260" fill="url(#dots)"/>
-  <circle cx="170" cy="30" r="240" fill="url(#glowY)"/>
-  <circle cx="1040" cy="230" r="280" fill="url(#glowT)"/>
+
 
   <!-- rubans fluides (boucles sans couture) -->
   <g fill="none" stroke-linecap="round">
