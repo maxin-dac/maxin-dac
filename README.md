@@ -61,7 +61,7 @@ Macro-financial country risk analysis tool, based exclusively on official data a
 
 **Microsoft Certified**
 
-<img src="https://img.shields.io/badge/DP--900%20Azure%20Data-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="DP-900 Data" /> <img src="https://img.shields.io/badge/PL--900%20Power%20Platform-742774?style=flat-square&logo=microsoft&logoColor=white" alt="PL-900 Power Platform" /> <img src="https://img.shields.io/badge/AZ--900%20Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="AZ-900 Azure" /> <img src="https://img.shields.io/badge/SC--900%20Security%20Compliance%20&%20Identity-00A4EF?style=flat-square&logo=microsoft&logoColor=white" alt="SC--900%20Security%20Compliance%20&%20Identity" />
+<img src="https://img.shields.io/badge/DP--900%20Azure%20Data-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="DP-900 Data" /> <img src="https://img.shields.io/badge/AI--901%20Azure%20AI-0050D9?style=flat-square&logo=microsoftazure&logoColor=white" alt="AI-901 AI" />   <img src="https://img.shields.io/badge/PL--900%20Power%20Platform-742774?style=flat-square&logo=microsoft&logoColor=white" alt="PL-900 Power Platform" /> <img src="https://img.shields.io/badge/AZ--900%20Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="AZ-900 Azure" /> <img src="https://img.shields.io/badge/SC--900%20Security%20Compliance%20&%20Identity-00A4EF?style=flat-square&logo=microsoft&logoColor=white" alt="SC--900%20Security%20Compliance%20&%20Identity" />
 
 **Other**
 
@@ -99,8 +99,6 @@ Macro-financial country risk analysis tool, based exclusively on official data a
 | Get started with identities and access using Microsoft Entra | Dec 2025 |
 
 </details>
-
-🏅 [Microsoft Certifications & Applied Skills - Official Transcript](https://learn.microsoft.com/en-us/users/maximendacleu-3447/transcript/vjjnkuwyoknz4nq?source=docs)
 
 ---
 
