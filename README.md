@@ -27,7 +27,7 @@ My path is not linear, that is my strength. From public law to business intellig
 
 ### 🌍 [Global Economic Intelligence Dashboard](https://github.com/maxin-dac/world-economic-dashboard)
 
-An integrated bilingual platform (EN/FR) analyzing global economies using a PESTEL approach. 217 countries · 2000-2024 · 58 structured World Bank indicators.
+> An integrated bilingual platform (EN/FR) analyzing global economies using a PESTEL approach. 217 countries · 2000-2024 · 58 structured World Bank indicators.
 
 <p align="left">
 <a href="https://world-economic-dashboard.onrender.com/" target="_blank"><img src="https://img.shields.io/badge/▶_Live_Demo-0B2C8A?style=for-the-badge&logo=render&logoColor=white" alt="Live Demo" /></a>
@@ -37,13 +37,11 @@ An integrated bilingual platform (EN/FR) analyzing global economies using a PEST
 
 ### 🛰 [Country Risk Desk](https://github.com/maxin-dac/country-risk-desk)
 
-Macro-financial country risk analysis tool, based exclusively on official data and documented rules. Scenario analysis for risk/opportunity assessment. Bilingual interface 🇫🇷/🇬🇧 · 217 economies · 17 indicators · sovereign ratings from S&P, Moody's, and Fitch · official sources.
+> Macro-financial country risk analysis tool, based exclusively on official data and documented rules. Scenario analysis for risk/opportunity assessment. Bilingual interface 🇫🇷/🇬🇧 · 217 economies · 17 indicators · sovereign ratings from S&P, Moody's, and Fitch · official sources.
 
 <p align="left">
 <a href="https://country-risk-desk.onrender.com/" target="_blank"><img src="https://img.shields.io/badge/▶_Live_Demo-0A2C3A?style=for-the-badge&logo=render&logoColor=white" alt="Live Demo" /></a>
 <a href="https://github.com/maxin-dac/country-risk-desk" target="_blank"><img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Code" /></a>
-
-<sub>🚧 More projects in progress - open to collaborations!</sub>
 
 ---
 
