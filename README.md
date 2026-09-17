@@ -4,14 +4,14 @@
 
 # 👋 Hi, I'm Max!
 
-### BI & Data Analyst
+### Data Analyst & BI
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=F5B800&center=true&vCenter=true&background=0D1117&width=650&height=50&lines=BI+%C2%B7+Data+Analyst;Python+%C2%B7+Power+BI+%C2%B7+Excel;Always+learning+%E2%80%94+AI%2C+Cloud%2C+Automation" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=F5B800&center=true&vCenter=true&background=0D1117&width=650&height=50&lines=Data+Analyst+%C2%B7+BI;Python+%C2%B7+Power+BI+%C2%B7+Excel;Always+learning+%E2%80%94+AI%2C+Cloud%2C+Automation" alt="Typing SVG" />
 
 <br>
 
-<a href="https://www.linkedin.com/in/maximendacleu" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-[![Portfolio](https://img.shields.io/badge/Portfolio-0C3038?style=for-the-badge&logo=googlechrome&logoColor=F2B544)](https://maxin-dac.github.io)
+<a href="https://www.linkedin.com/in/maximendacleu" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge" alt="LinkedIn" /></a>
+[![Portfolio](https://img.shields.io/badge/Portfolio-F5B800?style=for-the-badge)](https://maxin-dac.github.io)
 
 </div>
 
