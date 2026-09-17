@@ -1,14 +1,12 @@
 #!/usr/bin/env python3
 """
 README :
-  1. Stack & Tools  -> badges shields.io <!-- STACK:START/END -->
-  2. Activity card  -> assets/activity-card.svg
+  Stack & Tools  -> badges shields.io <!-- STACK:START/END -->
 """
 
+import json
 import os
 import re
-from datetime import date, timedelta
-from xml.sax.saxutils import escape as xml_escape
 
 import requests
 from requests.adapters import HTTPAdapter
@@ -17,9 +15,6 @@ from urllib3.util.retry import Retry
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
 GITHUB_USER = "maxin-dac"
 README_PATH = "README.md"
-MAIN_PROJECT = "world-economic-dashboard"
-ACTIVITY_SVG_PATH = "assets/activity-card.svg"
-TOKEN = os.environ.get("GITHUB_TOKEN", "")
 TIMEOUT = 15
 
 session = requests.Session()
@@ -37,44 +32,78 @@ HEADERS = {
     "Accept": "application/vnd.github.v3+json",
     "User-Agent": "maxin-dac-stack-generator",
 }
-if TOKEN:
-    HEADERS["Authorization"] = f"token {TOKEN}"
 
 # ─── BADGES STACK ─────────────────────────────────────────────────────────────
 BADGE_MAP = {
-    "python":    ("Python",    "3776AB", "python"),
-    "sql":       ("SQL",       "4479A1", ""),
-    "pandas":    ("Pandas",    "150458", "pandas"),
-    "numpy":     ("NumPy",     "013243", ""),
-    "plotly":    ("Plotly",    "3F4F75", "plotly"),
-    "streamlit": ("Streamlit", "FF4B4B", "streamlit"),
-    "powerbi":   ("Power BI",  "F2C811", "powerbi"),
-    "excel":     ("Excel",     "217346", "microsoftexcel"),
-    "git":       ("Git",       "F05032", "git"),
-    "github":    ("GitHub",    "181717", "github"),
-    "vscode":    ("VS Code",   "007ACC", "visualstudiocode"),
-    "azure":     ("Azure",     "0078D4", "microsoftazure"),
-    "copilot":   ("Copilot",   "000000", "githubcopilot"),
+    "python":        ("Python",         "3776AB", "python"),
+    "sql":           ("SQL",            "4479A1", ""),
+    "pandas":        ("Pandas",         "150458", "pandas"),
+    "numpy":         ("NumPy",          "013243", ""),
+    "plotly":        ("Plotly",         "3F4F75", "plotly"),
+    "streamlit":     ("Streamlit",      "FF4B4B", "streamlit"),
+    "powerbi":       ("Power BI",       "F2C811", "powerbi"),
+    "excel":         ("Excel",          "217346", "microsoftexcel"),
+    "git":           ("Git",            "F05032", "git"),
+    "github":        ("GitHub",         "181717", "github"),
+    "vscode":        ("VS Code",        "007ACC", "visualstudiocode"),
+    "azure":         ("Azure",          "0078D4", "microsoftazure"),
+    "copilot":       ("Copilot",        "000000", "githubcopilot"),
+    "docker":        ("Docker",         "2496ED", "docker"),
+    "fastapi":       ("FastAPI",        "009688", "fastapi"),
+    "flask":         ("Flask",          "000000", "flask"),
+    "django":        ("Django",         "092E20", "django"),
+    "jupyter":       ("Jupyter",        "F37626", "jupyter"),
+    "postgresql":    ("PostgreSQL",     "4169E1", "postgresql"),
+    "mysql":         ("MySQL",          "4479A1", "mysql"),
+    "mongodb":       ("MongoDB",        "47A248", "mongodb"),
+    "scikit-learn":  ("scikit-learn",   "F7931E", "scikit-learn"),
+    "pytorch":       ("PyTorch",        "EE4C2C", "pytorch"),
+    "tensorflow":    ("TensorFlow",     "FF6F00", "tensorflow"),
+    "javascript":    ("JavaScript",     "F7DF1E", "javascript"),
+    "react":         ("React",          "61DAFB", "react"),
+    "typescript":    ("TypeScript",     "3178C6", "typescript"),
+    "nodejs":        ("Node.js",        "339933", "node.js"),
 }
 
 DISPLAY_ORDER = [
-    "python", "sql", "pandas", "numpy", "plotly",
-    "streamlit", "powerbi", "excel",
-    "git", "github", "vscode", "azure", "copilot",
+    "python", "sql", "pandas", "numpy", "plotly", "streamlit",
+    "powerbi", "excel", "azure", "jupyter", "docker", "fastapi",
+    "flask", "django", "postgresql", "mysql", "mongodb",
+    "scikit-learn", "pytorch", "tensorflow", "javascript",
+    "react", "typescript", "nodejs", "git", "github", "vscode",
+    "copilot"
 ]
 
-REQ_KEYWORDS = {
+TECH_KEYWORDS = {
+    "python": ["python", "pyproject", "requirements", "pipenv", "poetry", "conda"],
+    "sql": ["sql", "sqlalchemy", "pyodbc", "pymssql", "psycopg", "postgresql", "postgres", "mysql", "sqlite", "duckdb", "snowflake"],
+    "pandas": ["pandas", "dataframe", "pd."],
+    "numpy": ["numpy", "np."],
+    "plotly": ["plotly"],
     "streamlit": ["streamlit"],
-    "plotly":    ["plotly"],
-    "pandas":    ["pandas"],
-    "numpy":     ["numpy"],
-    "sql":       ["sqlalchemy", "pyodbc", "pymssql", "psycopg"],
-    "azure":     ["azure"],
+    "powerbi": ["powerbi", "power bi", "dax"],
+    "excel": ["excel", "xlsxwriter", "openpyxl", "pandas", "xlsx"],
+    "azure": ["azure", "azure-functions", "azureml", "msfabric", "fabric", "mlflow"],
+    "docker": ["docker", "dockerfile", "compose", "container"],
+    "fastapi": ["fastapi", "uvicorn"],
+    "flask": ["flask"],
+    "django": ["django"],
+    "jupyter": ["jupyter", "notebook", "ipython"],
+    "postgresql": ["postgresql", "postgres", "psycopg"],
+    "mysql": ["mysql"],
+    "mongodb": ["mongodb", "pymongo"],
+    "scikit-learn": ["scikit-learn", "sklearn", "xgboost", "lightgbm", "catboost"],
+    "pytorch": ["torch", "pytorch"],
+    "tensorflow": ["tensorflow", "keras"],
+    "javascript": ["javascript", "node", "npm", "yarn", "express", "jest"],
+    "react": ["react", "next", "vite", "jsx", "tsx"],
+    "typescript": ["typescript", "tsconfig", "tsx"],
+    "nodejs": ["node", "npm", "package.json", "express"],
 }
 
-LANG_ALIASES = {"shell": "bash", "javascript": "js", "typescript": "ts"}
+LANG_ALIASES = {"shell": "bash", "javascript": "javascript", "typescript": "typescript", "python": "python", "jupyter notebook": "jupyter", "html": "javascript", "css": "javascript", "dockerfile": "docker"}
 
-KNOWN_TECHS = set(BADGE_MAP) | set(REQ_KEYWORDS)
+KNOWN_TECHS = set(BADGE_MAP) | set(TECH_KEYWORDS)
 
 # ─── API GITHUB ───────────────────────────────────────────────────────────────
 
@@ -109,23 +138,48 @@ def get_repo_languages(owner, repo):
     return resp.json() if (resp is not None and resp.status_code == 200) else {}
 
 
+def get_repo_root_files(owner, repo):
+    url = f"https://api.github.com/repos/{owner}/{repo}/contents"
+    resp = safe_get(url)
+    if resp is None or resp.status_code != 200:
+        return []
+    try:
+        payload = resp.json()
+        if isinstance(payload, list):
+            return [item.get("name", "").lower() for item in payload if item.get("name")]
+    except (ValueError, TypeError):
+        pass
+    return []
+
+
 def get_file_content(owner, repo, path):
     url = f"https://api.github.com/repos/{owner}/{repo}/contents/{path}"
     resp = safe_get(url, raw=True)
     return resp.text if (resp is not None and resp.status_code == 200) else None
 
-# ─── DETECTION STACK ──────────────────────────────────────────────────────────
 
-def detect_from_requirements(content):
+def detect_from_content(content):
     detected = set()
-    content_lower = content.lower()
-    for tech, keywords in REQ_KEYWORDS.items():
+    text = (content or "").lower()
+    for tech, keywords in TECH_KEYWORDS.items():
         for kw in keywords:
-            if kw in content_lower:
+            if kw in text:
                 detected.add(tech)
                 break
     return detected
 
+
+def parse_package_json(content):
+    try:
+        payload = json.loads(content)
+    except (TypeError, ValueError):
+        return set()
+    deps = set()
+    for section in ("dependencies", "devDependencies", "peerDependencies"):
+        deps.update((payload.get(section) or {}).keys())
+    return {d.lower() for d in deps}
+
+# ─── DETECTION STACK ──────────────────────────────────────────────────────────
 
 def detect_from_repo(repo):
     detected = set()
@@ -137,21 +191,41 @@ def detect_from_repo(repo):
         if key in KNOWN_TECHS:
             detected.add(key)
 
-    req = get_file_content(owner, name, "requirements.txt")
-    if req:
-        detected |= detect_from_requirements(req)
-    else:
-        pyproject = get_file_content(owner, name, "pyproject.toml")
-        if pyproject:
-            detected |= detect_from_requirements(pyproject)
+    root_files = set(get_repo_root_files(owner, name))
+    files_to_check = [
+        "requirements.txt", "pyproject.toml", "poetry.lock", "setup.py",
+        "package.json", "package-lock.json", "yarn.lock", "pnpm-lock.yaml",
+        "dockerfile", "docker-compose.yml", "docker-compose.yaml",
+        ".streamlit/config.toml", "environment.yml", "Pipfile", "requirements-dev.txt",
+        "runtime.txt"
+    ]
 
-    if get_file_content(owner, name, ".streamlit/config.toml"):
-        detected.add("streamlit")
+    for file_name in files_to_check:
+        if file_name in root_files:
+            content = get_file_content(owner, name, file_name)
+            if file_name in {"package.json", "package-lock.json"}:
+                detected |= detect_from_content("\n".join(parse_package_json(content or "")))
+            else:
+                detected |= detect_from_content(content or "")
 
-    for topic in repo.get("topics", []):
-        t = topic.lower().replace("-", "")
-        if t in KNOWN_TECHS:
-            detected.add(t)
+    for path in ["requirements.txt", "pyproject.toml", ".streamlit/config.toml"]:
+        content = get_file_content(owner, name, path)
+        if content:
+            detected |= detect_from_content(content)
+
+    desc = (repo.get("description") or "").lower()
+    if "dashboard" in desc or "data" in desc:
+        detected.add("python")
+
+    topics = {t.lower().replace("-", "") for t in repo.get("topics", [])}
+    for topic in topics:
+        if topic in KNOWN_TECHS:
+            detected.add(topic)
+
+    repo_name = name.lower()
+    for token in ["streamlit", "plotly", "powerbi", "sql", "azure", "docker", "fastapi", "django", "flask", "jupyter"]:
+        if token in repo_name:
+            detected.add(token)
 
     return detected
 
@@ -172,195 +246,6 @@ def generate_stack_markdown(all_techs):
     if not badges:
         return "_Stack auto-détecté : aucun repo public pour l'instant._"
     return " ".join(badges)
-
-# ─── ACTIVITY DATA ───────────────────────────────────────────────────────
-
-GRAPHQL_QUERY = """
-query($login: String!) {
-  user(login: $login) {
-    contributionsCollection {
-      contributionCalendar {
-        totalContributions
-        weeks { contributionDays { date contributionCount } }
-      }
-    }
-  }
-}
-"""
-
-
-def fetch_streak_data():
-    """Total contributions + streaks via GraphQL (token requis)."""
-    if not TOKEN:
-        print("  ⚠️  Pas de token : données de streak non récupérées.")
-        return None
-    try:
-        resp = session.post(
-            "https://api.github.com/graphql",
-            headers={**HEADERS, "Accept": "application/json"},
-            json={"query": GRAPHQL_QUERY, "variables": {"login": GITHUB_USER}},
-            timeout=TIMEOUT,
-        )
-    except requests.exceptions.RequestException as e:
-        print(f"  ⚠️  GraphQL injoignable : {e}")
-        return None
-    if resp.status_code != 200:
-        print(f"  ⚠️  GraphQL status {resp.status_code}.")
-        return None
-
-    cal = resp.json()["data"]["user"]["contributionsCollection"]["contributionCalendar"]
-    counts = {
-        date.fromisoformat(d["date"]): d["contributionCount"]
-        for week in cal["weeks"] for d in week["contributionDays"]
-    }
-
-    today = date.today()
-    
-    cur, d = 0, today
-    if counts.get(d, 0) == 0:
-        d -= timedelta(days=1)
-    while counts.get(d, 0) > 0:
-        cur += 1
-        d -= timedelta(days=1)
-
-    
-    longest = run = 0
-    ls_start = ls_end = run_start = None
-    for d in sorted(counts):
-        if counts[d] > 0:
-            if run == 0:
-                run_start = d
-            run += 1
-            if run > longest:
-                longest, ls_start, ls_end = run, run_start, d
-        else:
-            run = 0
-
-    active = [d for d in counts if counts[d] > 0]
-    return {
-        "total": cal["totalContributions"],
-        "since": min(active),
-        "current": cur,
-        "today": today,
-        "longest": longest,
-        "ls_start": ls_start,
-        "ls_end": ls_end,
-    }
-
-
-def fetch_profile_views():
-    """Lit le compteur komarev directement sur le SVG du badge."""
-    resp = safe_get(f"https://komarev.com/ghpvc/?username={GITHUB_USER}&style=flat-square")
-    if resp is None:
-        return "—"
-    vals = re.findall(r">([^<]+)</text>", resp.text)
-    return vals[-1].strip() if vals else "—"
-
-
-def fetch_public_repos():
-    resp = safe_get(f"https://api.github.com/users/{GITHUB_USER}")
-    if resp is not None and resp.status_code == 200:
-        return str(resp.json().get("public_repos", "—"))
-    return "—"
-
-
-def fetch_last_commit():
-    resp = safe_get(
-        f"https://api.github.com/repos/{GITHUB_USER}/{MAIN_PROJECT}/commits",
-        params={"per_page": 1},
-    )
-    if resp is None or resp.status_code != 200:
-        return "—"
-    iso = resp.json()[0]["commit"]["committer"]["date"][:10]
-    return date.fromisoformat(iso)
-
-# ─── CARTE ACTIVITÉ (SVG auto-hébergé, thème clair) ───────────────────────────
-
-FONT = "Segoe UI, Helvetica, Arial, sans-serif"
-FLAME = ("M12,26 C12,26 7,22 7,17.5 C7,14 9.5,11.5 10.5,8.5 C12.5,11 13,13 12.8,15 "
-         "C14.5,13.5 16,10.5 15.6,7 C18.5,10 20,13.5 20,17.5 C20,22 15,26 15,26 Z")
-
-
-def build_activity_svg(streak, views, repos_count, last_commit):
-    """Carte activité — thème clair, mêmes contours que les bannières."""
-    cols = []
-    if streak:
-        cols.append(("value", str(streak["total"]), "Total Contributions",
-                     f'{streak["since"]:%b %d, %Y} - Present'))
-        cols.append(("ring", str(streak["current"]), "Current Streak",
-                     f'{streak["today"]:%b %d}'))
-        cols.append(("value", str(streak["longest"]), "Longest Streak",
-                     f'{streak["ls_start"]:%b %d} - {streak["ls_end"]:%b %d}'))
-    cols.append(("value", views, "Profile Views", "Since Sep 13, 2026"))
-    cols.append(("value", repos_count, "Public Repos", "Open source"))
-    cols.append(("value",
-                 f'{last_commit:%b %d}' if last_commit != "—" else "—",
-                 "Last Commit", MAIN_PROJECT))
-
-    cw, h = 132, 150
-    w = cw * len(cols)
-    p = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
-        f'viewBox="0 0 {w} {h}" role="img" aria-label="GitHub activity card">',
-        '<defs>',
-        '<linearGradient id="abg" x1="0" y1="0" x2="0" y2="1">',
-        '<stop offset="0" stop-color="#FFFDF9"/>',
-        '<stop offset="1" stop-color="#EEF8F6"/>',
-        '</linearGradient>',
-        '<linearGradient id="arule" x1="0" y1="0" x2="1" y2="0">',
-        '<stop offset="0" stop-color="#F2B544"/>',
-        '<stop offset="0.5" stop-color="#247F82">',
-        '<animate attributeName="stop-color" values="#247F82;#D96852;#247F82" '
-        'dur="12s" repeatCount="indefinite"/>',
-        '</stop>',
-        '<stop offset="1" stop-color="#D96852"/>',
-        '</linearGradient>',
-        '<pattern id="adots" width="26" height="26" patternUnits="userSpaceOnUse">',
-        '<circle cx="1.5" cy="1.5" r="1" fill="#B7DFD9" opacity="0.45"/>',
-        '</pattern>',
-        f'<clipPath id="aclip"><rect width="{w}" height="{h}" rx="8"/></clipPath>',
-        '</defs>',
-        f'<rect width="{w}" height="{h}" rx="8" fill="url(#abg)"/>',
-        '<g clip-path="url(#aclip)">',
-        f'<rect width="{w}" height="{h}" fill="url(#adots)"/>',
-        f'<rect width="{w}" height="4" fill="url(#arule)"/>',
-        f'<rect y="{h - 4}" width="{w}" height="4" fill="url(#arule)"/>',
-        '</g>',
-    ]
-    for i, (kind, value, label, sub) in enumerate(cols):
-        cx = i * cw + cw // 2
-        if i:
-            p.append(f'<line x1="{i * cw}" y1="24" x2="{i * cw}" y2="{h - 24}" '
-                     f'stroke="#B7DFD9" stroke-width="1" opacity="0.8"/>')
-        if kind == "ring":
-            p.append(f'<circle cx="{cx}" cy="62" r="26" fill="none" '
-                     f'stroke="#F2B544" stroke-width="3.5"/>')
-            p.append(f'<path d="{FLAME}" fill="#D96852" '
-                     f'transform="translate({cx - 13.5},30) scale(0.62)"/>')
-        p.append(f'<text x="{cx}" y="70" text-anchor="middle" font-family="{FONT}" '
-                 f'font-size="21" font-weight="700" fill="#124D55">{xml_escape(value)}</text>')
-        p.append(f'<text x="{cx}" y="96" text-anchor="middle" font-family="{FONT}" '
-                 f'font-size="10.5" fill="#247F82">{xml_escape(label)}</text>')
-        p.append(f'<text x="{cx}" y="116" text-anchor="middle" font-family="{FONT}" '
-                 f'font-size="9" fill="#637875">{xml_escape(sub)}</text>')
-    p.append("</svg>")
-    return "\n".join(p)
-
-
-def write_activity_svg():
-    streak = fetch_streak_data()
-    views = fetch_profile_views()
-    repos_count = fetch_public_repos()
-    last_commit = fetch_last_commit()
-
-    if streak is None and views == "—":
-        print("  ⚠️  Données d'activité indisponibles : SVG existant conservé.")
-        return
-
-    os.makedirs(os.path.dirname(ACTIVITY_SVG_PATH), exist_ok=True)
-    with open(ACTIVITY_SVG_PATH, "w", encoding="utf-8") as f:
-        f.write(build_activity_svg(streak, views, repos_count, last_commit))
-    print(f"OK : {ACTIVITY_SVG_PATH} généré.")
 
 # ─── INJECTION README ─────────────────────────────────────────────────────────
 
@@ -407,8 +292,6 @@ def main():
 
     print(f"\nTotal : {len(all_techs)} technologies détectées")
     inject_into_readme(README_PATH, generate_stack_markdown(all_techs))
-
-    write_activity_svg()
 
 
 if __name__ == "__main__":
