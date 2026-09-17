@@ -55,7 +55,9 @@ My path is not linear, that is my strength. From public law to business intellig
 
 ---
 
-## Certifications & Continuous Improvement
+## Learning and practice
+
+> A continuous learning approach based on practice, experimentation, and the validation of relevant skills.
 
 **Microsoft Certified**
 
