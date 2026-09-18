@@ -71,7 +71,7 @@ My path is not linear, that is my strength. From public law to business intellig
 
 | Skill | Earned |
 |-------|--------|
-| Microsoft Applied Skills: Build an agent in Microsoft Copilot Studio | Sep 2026 |
+| Build an agent in Microsoft Copilot Studio | Sep 2026 |
 | Develop an agent with integrated tools | Sep 2026 |
 | Get started developing agents in Microsoft Foundry | Jul 2026 |
 | Implement a Real-Time Intelligence solution with Microsoft Fabric | Dec 2025 |
