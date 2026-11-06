@@ -4,7 +4,7 @@
 
 # 👋 Hi, I'm Max!
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=F5B800&center=true&vCenter=true&background=0D1117&width=650&height=50&lines=Data+Analyst+%C2%B7+Business+Intelligence+%C2%B7+IT+Support;Always+learning+%E2%80%94+AI%2C+Cloud%2C+Automation" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=F5B800&center=true&vCenter=true&background=0D1117&width=650&height=50&lines=Data+Analyst+%C2%B7+Business+Intelligence;Always+learning+%E2%80%94+AI%2C+Cloud%2C+Automation" alt="Typing SVG" />
 
 <br>
 
@@ -17,7 +17,7 @@
 
 ## About
 
-With a background in public law, a Master’s degree in AI & Business Intelligence, and a background in IT support, I help organizations drive performance. Having led over ten market studies (pricing, expansion, service quality) for major corporate clients, I combine data analysis, decision-making dashboards, and IT support.
+After starting my career in public law, I retrained in IT and then moved into data analytics and BI. Today, as a Data Analyst, I use analysis, visualization, and dashboards to help organizations make informed decisions. My experience includes delivering over ten studies for major clients. With a Master's degree in AI and Business Intelligence, I bring together legal rigour, an IT background, and hands-on data work.
 
 ---
 
@@ -103,7 +103,7 @@ With a background in public law, a Master’s degree in AI & Business Intelligen
 
 <div align="center">
 
-<sub><b>Open to Data Analyst / BI Analyst / Market Research / IT Support roles</b></sub>
+<sub><b>Open to Data Analyst / BI Analyst / Market Research opportunities. Also available for IT Support roles.</b></sub>
 
 </div>
 
